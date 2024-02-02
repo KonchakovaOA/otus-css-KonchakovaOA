@@ -64,11 +64,45 @@ font-weight: 600;
             width: 1440px;
             height:630px;
             padding: 0;
-            margin: 50px 0 50px 20px;
-            background: url("img\background.jpg");
+            margin: 0;
+            background-image: url("img\background.jpg");
             background-size: no-repeat;
             background-position: center;
             background-size: cover;
+            background: #6c1e1e;
+        }
+        .section-h {
+            display: inline-block;
+            width:690px;
+            height:360px;
+            padding: 0;
+            margin: 0;
+            position: center;
+            background: #ffffff;
+        
+        }
+       
+        
+        .hero {
+            display: inline-block;
+            width: 560px;
+            height:103px;
+            padding: 0;
+            margin: 0;
+            position: center;
+            background: #FFF;
+        
+        }
+        
+        
+        .subtitle {
+            display: inline-block;
+             width: 557px;
+             height:23px;
+             padding: 0;
+             margin: 0;
+             position: center;
+             background: #FFF;
         }
 
 .list, .quote {
@@ -91,7 +125,8 @@ line-height: normal;
 text-transform: uppercase;
 }
 
-.subtitle, .content-biography, .content-footer {
+
+.content-biography, .content-footer {
     color: #000;
     text-align: center;
     font-family: "Roboto";
