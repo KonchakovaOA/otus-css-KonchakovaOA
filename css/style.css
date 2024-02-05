@@ -58,52 +58,59 @@ font-weight: 600;
             color: #000;
         }
        
-
+        
         .hero-section {
-            display: border-box;
-            width: 1440px;
-            height:630px;
-            padding: 0;
-            margin: 0;
-            background-color: #6c1e1e;
-            background-image: url("background_hed.png");
+            
+            background-color: DDD0C7;
+            background-image: url(/img/background.jpg); 
             background-size: no-repeat;
             background-position: center;
             background-size: cover;
+            width: 1440px;
+            height:630px;
+            top: 135px;
+            justify-content: center;
+            align-items: stretch;
+            margin-bottom: 0 auto;
+            padding-top: 100px;
+            padding-bottom: 0 auto;
             
         }
         .section-h {
-            display: inline-block;
-            width:690px;
-            height:360px;
-            padding: 0;
-            margin: 0;
-            position: center;
-            background: #ffffff;
-        
+            display: block;
+            max-width:690px; 
+            max-height: 360px;
+            top: 271px;
+            left: 375px;
+            gap: 14px;
+            margin: 0 auto;
+            padding-top: 110px;
+            padding-bottom: 110px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #FFF;
+            text-align: center;
+
         }
        
         
         .hero {
-            display: inline-block;
-            width: 560px;
-            height:103px;
-            padding: 0;
-            margin: 0;
-            position: center;
-            background: #FFF;
-        
+            
+            display: grid;
+            font-size: 86px;
+            line-height: 103px;
+            margin-bottom: 18px;
+            
         }
         
         
         .subtitle {
-            display: inline-block;
-             width: 557px;
-             height:23px;
-             padding: 0;
-             margin: 0;
-             position: center;
-             background: #FFF;
+            display: grid;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+          
+             
         }
 
 .list, .quote {
