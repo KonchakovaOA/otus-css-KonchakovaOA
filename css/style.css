@@ -65,11 +65,12 @@ font-weight: 600;
             height:630px;
             padding: 0;
             margin: 0;
-            background-image: url("img\background.jpg");
+            background-color: #6c1e1e;
+            background-image: url("background_hed.png");
             background-size: no-repeat;
             background-position: center;
             background-size: cover;
-            background: #6c1e1e;
+            
         }
         .section-h {
             display: inline-block;
