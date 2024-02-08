@@ -4,7 +4,7 @@ html{
 font-family: 'Bitter', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif;
-width: 1440px;
+width: 100%px;
 height: 4395px;
 background: #FFF;
 
@@ -13,7 +13,7 @@ background: #FFF;
 
 .container {
     display: flex;
-    max-width: 1397px;
+    width: 100%;
     height: 135px;
     outline: 1px solid  #FFF;
     box-sizing: border-box;
@@ -60,22 +60,24 @@ font-weight: 600;
        
         
         .hero-section {
-            
+           
             background-color: DDD0C7;
             background-image: url(/img/background.jpg); 
             background-size: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 1440px;
+            width: 100%;
             height:630px;
-            top: 135px;
-            justify-content: center;
             align-items: stretch;
             margin-bottom: 0 auto;
             padding-top: 100px;
             padding-bottom: 0 auto;
-            
+            justify-content: center;
         }
+
+        
+        
+
         .section-h {
             display: block;
             max-width:690px; 
@@ -87,16 +89,16 @@ font-weight: 600;
             padding-top: 110px;
             padding-bottom: 110px;
             padding-left: 20px;
-            padding-right: 20px;
+            padding-right: 30px;
             background-color: #FFF;
             text-align: center;
-
+            justify-content:center;
         }
        
         
         .hero {
-            
             display: grid;
+            justify-content:center;
             font-size: 86px;
             line-height: 103px;
             margin-bottom: 18px;
@@ -106,6 +108,7 @@ font-weight: 600;
         
         .subtitle {
             display: grid;
+            justify-content:center;
             font-weight: bold;
             font-size: 20px;
             line-height: 23px;
