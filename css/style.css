@@ -4,10 +4,117 @@ html{
 font-family: 'Bitter', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif;
-width: 1440px;
+width: 100%px;
 height: 4395px;
 background: #FFF;
+
 }
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 135px;
+    outline: 1px solid  #FFF;
+    box-sizing: border-box;
+}
+
+.logo {
+display: inline-block;
+width: 182px;
+height: 103px;
+padding: 0;
+margin: 20px 20px 20px 0;
+vertical-align: center; 
+color: #000;
+font-family: "Playfair Display";
+font-size: 86px;
+font-style: normal;
+font-weight: 600;
+    }
+    
+ .nav {
+     display: inline-block;
+     width: 1195px;
+     height:28px;
+     padding: 0;
+     margin: 50px 0 50px 202px;
+     position: static;
+    color: #000;
+    text-align: right;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;  
+    vertical-align: center; 
+     
+        }
+        .button { 
+            width: 109px;
+            height:28px;
+            padding: 0;
+            margin: 20px 0 20px 20px;  
+            color: #000;
+        }
+       
+        
+        .hero-section {
+           
+            background-color: DDD0C7;
+            background-image: url(/img/background.jpg); 
+            background-size: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height:630px;
+            align-items: stretch;
+            margin-bottom: 0 auto;
+            padding-top: 100px;
+            padding-bottom: 0 auto;
+            justify-content: center;
+        }
+
+        
+        
+
+        .section-h {
+            display: block;
+            max-width:690px; 
+            max-height: 360px;
+            top: 271px;
+            left: 375px;
+            gap: 14px;
+            margin: 0 auto;
+            padding-top: 110px;
+            padding-bottom: 110px;
+            padding-left: 20px;
+            padding-right: 30px;
+            background-color: #FFF;
+            text-align: center;
+            justify-content:center;
+        }
+       
+        
+        .hero {
+            display: grid;
+            justify-content:center;
+            font-size: 86px;
+            line-height: 103px;
+            margin-bottom: 18px;
+            
+        }
+        
+        
+        .subtitle {
+            display: grid;
+            justify-content:center;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+          
+             
+        }
 
 .list, .quote {
     color: #000;
@@ -29,7 +136,8 @@ line-height: normal;
 text-transform: uppercase;
 }
 
-.nav, .subtitle, .content-biography, .content-footer {
+
+.content-biography, .content-footer {
     color: #000;
     text-align: center;
     font-family: "Roboto";
@@ -48,11 +156,4 @@ text-transform: uppercase;
         line-height: 26px;
         }
 
-        .header {
-color: #000;
-font-family: "Playfair Display";
-font-size: 86px;
-font-style: normal;
-font-weight: 600;
-line-height: 120%; /* 103.2px */
-        }
+
