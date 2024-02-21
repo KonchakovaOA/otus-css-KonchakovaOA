@@ -128,25 +128,18 @@ font-weight: 600;
         width: 100%;
         margin-top: 100px;
         gap: 1em;
-        justify-content: space-around;
+        justify-content: center;
      
        
 
        }
 
        .image-katya {
-        width: 30%;
         display: flex;
         align-content:stretch;
         flex-grow: 1;
 
        }
-
-       .katya {
-        width: 100%;
-       }
-
-
 
     .title-biography {
     display: flex;
@@ -159,31 +152,34 @@ font-weight: 600;
     font-weight: 700;
     line-height: normal;
     flex-direction: column;
-    flex-direction: row;
     justify-content: space-between;
     transform:rotate(270deg);
     padding: 50px;
     top:1033px;
     align-content:flex-start;
+    
     }
 
 
          
         .content-block {
         display: flex;
-        width: 30%;
+        width:455px;
         height: auto;
+       top: 916px;
+        left:848px;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-content: space-between;
         flex-grow: 1;
+    
       
         }
 
 
        .h-katya {
         display:flex;
-        width: auto;
+        width: 466px;
         height: auto;
         font-family: 'Playfair Display', serif;
         color: #000;
@@ -191,6 +187,7 @@ font-weight: 600;
         font-style: medium;
         font-weight: 500;
         text-align: left;
+        align-content:center;
     
        }
        
@@ -207,29 +204,21 @@ font-weight: 600;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
- 
 }
 
 .blockquote {  
     display:flex;
     width: auto;
     height: auto;
-   
-
-
-
-
 }
+
 .dash{
     width: 20px;
     height: 6px;
     display: block;
     background-color: #000;
-
-    
-
 }
+
 .quote{
     display:flex;
     color: #000;
@@ -241,6 +230,16 @@ font-weight: 600;
     line-height: normal;
     margin-top: 36px;
     overflow: hidden;
+
+}
+
+.designers-block {
+    display: grid;
+    background-color: aquamarine;
+    width: 100%;
+min-height: 677px;
+margin-top: 100px;
+
 
 }
 
