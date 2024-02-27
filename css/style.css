@@ -235,12 +235,137 @@ font-weight: 600;
 
 .designers-block {
     display: grid;
-    background-color: aquamarine;
     width: 100%;
 min-height: 677px;
 margin-top: 100px;
 
 
+}
+
+
+.testimonials-block {
+    display: grid;
+    width: 100%;
+    max-height: 760px;
+    margin-top: 100px;
+    grid-template-columns: 1fr 451px 140px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 20px;
+  
+
+}
+
+.website{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-width: 98px;
+    transform:rotate(270deg);
+    justify-self: end;
+    align-self: center;
+    color:  #000;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+
+.brand{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self:end;
+    max-width: 98px;
+    transform:rotate(270deg);
+    align-self: center;
+    color:  #000;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.creativity{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self:end;
+    max-width: 98px;
+    transform:rotate(270deg);
+    align-self: center;
+    color:  #000;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.image-testimonials {
+    grid-row: 1/4;
+    grid-column: 2/3;
+
+}
+.title-testimonials{
+ display: border-box;
+    grid-row: span 3;
+    max-width: 28px;
+   max-height: 140px;
+    transform:rotate(270deg);
+    align-content: start;
+    justify-self: start;
+    gap: 200px 0 20px 20px;
+    color: #000;
+font-family: "Roboto-Bold";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 60px;
+top:1033px;
+
+
+}
+
+.rights-block {
+    
+    grid-row: 1/4;
+    grid-column: 4/5; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr;
+    justify-content: center;
+    /*gap: 42px;*/
+    max-width: 451px;
+
+
+}
+
+.blockquote-testimonials{
+max-width: 221px;
+max-height: 304px;
+    color: #000;
+    text-align:left;
+    font-family: "Bitter";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+   
+
+
+}
+
+.image-sinitta{
+    max-width: 221px;
+    max-height: 333px;
+    align-self: start;
+    gap: 0 0 20px 0;
+    align-items: start;
+    
 }
 
 .list  {
