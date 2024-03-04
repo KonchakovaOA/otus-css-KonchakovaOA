@@ -5,6 +5,7 @@ font-family: 'Bitter', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto-Bold', serif;
+font-family: 'Roboto-Regular', serif;
 width: 100%px;
 height: 4395px;
 background: #FFF;
@@ -60,6 +61,7 @@ font-weight: 600;
             padding: 0;
             margin: 20px 0 20px 20px;  
             color: #000;
+            text-decoration: none;
         }
        
         
@@ -245,12 +247,14 @@ margin-top: 100px;
 
 .testimonials-block {
     display: grid;
-    width: 100%;
+    max-width: 100vp;
     max-height: 760px;
     margin-top: 100px;
-    grid-template-columns: 1fr 451px 140px 1fr;
+    /*grid-template-columns: 1fr 451px 140px 1fr;*/
+    grid-template-columns: 10% 25% 15% 50%;
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
+    justify-self: center;
     column-gap: 20px;
   
 
@@ -269,6 +273,7 @@ margin-top: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    text-decoration: none;
 }
 
 
@@ -286,6 +291,7 @@ margin-top: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    text-decoration: none;
 }
 
 .creativity{
@@ -301,11 +307,13 @@ margin-top: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    text-decoration: none;
 }
 
 .image-testimonials {
     grid-row: 1/4;
     grid-column: 2/3;
+    width: 100%;
 
 }
 .title-testimonials{
@@ -399,7 +407,8 @@ text-transform: uppercase;
     line-height: normal;
     }
 
-    .more, .address, .copyright {
+    /*.more, */
+    .address, .copyright {
         color:  #000;
         font-family: "Roboto";
         font-size: 16px;
