@@ -149,7 +149,7 @@ font-weight: 600;
     height: 23px;
     color: #000;
     font-family: "Roboto-Bold";
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -250,8 +250,7 @@ margin-top: 100px;
     max-width: 100vp;
     max-height: 760px;
     margin-top: 100px;
-    /*grid-template-columns: 1fr 451px 140px 1fr;*/
-    grid-template-columns: 10% 25% 15% 50%;
+    grid-template-columns: 20% 20% 10% 30%;
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     justify-self: center;
