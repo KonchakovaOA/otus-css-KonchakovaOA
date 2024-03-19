@@ -14,7 +14,90 @@ padding: 0;
 
 }
 
+@font-face {
+    font-family: "Bitter", serif;
+    src: url(/fonts/Bitter-Light.ttf) format(.ttf);
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    }
+    
+    @font-face {
+        font-family: "Bitter", serif;
+        src: url(/fonts/Bitter-Regular.ttf) format(.ttf);
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    @font-face {
+        font-family: "Playfair Display', serif";
+        src: url(/fonts/PlayfairDisplay-Medium.ttf) format(.ttf);
+        color: #000;
+        font-size: 86px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 86px */
+    }
+    
+    @font-face {
+        font-family: "Playfair Display', serif";
+        src: url(/fonts/PlayfairDisplay-SemiBold.ttf) format(.ttf);
+        color: #000;
+        font-size: 86px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 103.2px */
+    }
+    
+    @font-face {
+        font-family: "Roboto", sans-serif;
+        src: url(/fonts/Roboto-Black.ttf) format(.ttf);
+        color: var(--White, #FFF);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
 
+    
+    @font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(/fonts/Roboto-Bold.ttf) format(.ttf);
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+    
+    @font-face {
+        font-family: "Roboto", sans-serif;
+        src: url(/fonts/Roboto-Medium.ttf) format(.ttf);
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        }
+    
+        @font-face {
+            font-family: "Roboto", sans-serif;
+            src: url(/fonts/Roboto-Regular.ttf) format(.ttf);
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+            }
 
 
 .container {
@@ -240,10 +323,111 @@ font-weight: 600;
 .designers-block {
     display: grid;
     width: 100%;
-min-height: 677px;
-margin-top: 100px;
+    max-height: 750px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    color: #000;
+    gap: 20px;
+    overflow-y: hidden;
+  
+
+}
 
 
+
+.title-designers {
+grid-column: 1/5;
+color: #000;
+font-family: "Roboto";
+font-size: 24px;
+font-style: bold;
+font-weight: 700;
+line-height: normal;
+padding-left: 100px;
+
+
+}
+
+.jess{
+    display: grid;
+    grid-template-columns: 572px;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: end;
+    
+
+}
+
+
+.jess-content{
+    align-self: baseline;
+    color: #000;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    justify-self: end;
+}
+
+.kameron {
+    display: grid;
+    grid-template-columns: 337px;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: end;
+    align-items:end;
+
+}
+
+
+.kameron-content{
+    align-self: baseline;
+    color: #000;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    justify-self: start;
+ 
+}
+
+.louisse {
+    display: grid;
+    grid-template-columns: 337px;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: end;
+    align-items:end;
+}
+
+
+.louisse-content {
+    align-self: baseline;
+    color: #000;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    justify-self: start;
+}
+
+.kameron-two{
+    display: grid;
+    grid-template-columns: 337px;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: end;
+    align-items:end;
+
+}
+
+.kameron-two-content{
+    align-self: baseline;
+    color: #000;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    justify-self: start;
 }
 
 
@@ -251,7 +435,7 @@ margin-top: 100px;
     display: grid;
     max-width: 100vp;
     max-height: 760px;
-    margin-top: 100px;
+    margin-top: 50px;
     grid-template-columns: 20% 20% 10% 30%;
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
@@ -262,13 +446,16 @@ margin-top: 100px;
     
 
 }
+.more {
+    text-decoration: none;
+    color:  #000;
 
+}
 
 .website {
     grid-row: 1/2;
     grid-column: 1/2;
     max-width: 98px;
-    text-decoration: none;
     transform:rotate(270deg);
     justify-self: end;
     align-self: center;
@@ -296,7 +483,7 @@ margin-top: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    text-decoration: none;
+ 
 }
 
 .creativity{
@@ -312,7 +499,7 @@ margin-top: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    text-decoration: none;
+   
 }
 
 .image-testimonials {
@@ -322,22 +509,22 @@ margin-top: 100px;
 
 }
 .title-testimonials{
- display: border-box;
+    display: border-box;
     grid-row: span 3;
     max-width: 28px;
-   max-height: 140px;
+    max-height: 140px;
     transform:rotate(270deg);
     align-content: start;
     justify-self: start;
-    gap: 200px 0 20px 20px;
+    gap: 100px 0 20px 20px;
     color: #000;
-font-family: "Roboto-Bold";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-padding: 100px;
-/*top:700px;*/
+   font-family: "Roboto-Bold";
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   padding: 70px;
+
 
 
 }
@@ -350,15 +537,14 @@ padding: 100px;
     grid-template-columns: 1fr;
     grid-template-rows:1fr 1fr;
     justify-content: center;
-    /*gap: 42px;*/
     max-width: 451px;
 
 
 }
 
 .blockquote-testimonials{
-max-width: 221px;
-max-height: 304px;
+    max-width: 221px;
+    max-height: 304px;
     color: #000;
     text-align:center;
     font-family: "Bitter";
@@ -391,7 +577,7 @@ max-height: 304px;
     line-height: normal;
 }
 
-.title, .sidebar-more, .designers-article {
+.title, .sidebar-more,  {
 color: #000;
 font-family: "Roboto";
 font-size: 16px;
@@ -402,7 +588,7 @@ text-transform: uppercase;
 }
 
 
-.content-biography, .content-footer {
+ .content-footer {
     color: #000;
     text-align: center;
     font-family: "Roboto";
@@ -412,7 +598,7 @@ text-transform: uppercase;
     line-height: normal;
     }
 
-    /*.more, */
+  
     .address, .copyright {
         color:  #000;
         font-family: "Roboto";
