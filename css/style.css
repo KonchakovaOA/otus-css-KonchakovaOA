@@ -678,7 +678,7 @@ min-width: 451px;
     font-weight: 400;
     line-height: normal;
     list-style: none;
-    float: left;
+    //*float: left;*/
 
 }
 
@@ -747,7 +747,7 @@ min-width: 451px;
         font-weight: 400;
         line-height: normal;
         list-style: none;
-        float: left;
+        /*float: left;*/
 
     }
 
