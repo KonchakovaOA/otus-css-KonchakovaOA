@@ -65,7 +65,90 @@ html {
     line-height: normal;
 }
 
+@font-face {
+    font-family: "Bitter", serif;
+    src: url(/fonts/Bitter-Light.ttf) format(.ttf);
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    }
+    
+    @font-face {
+        font-family: "Bitter", serif;
+        src: url(/fonts/Bitter-Regular.ttf) format(.ttf);
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    @font-face {
+        font-family: "Playfair Display', serif";
+        src: url(/fonts/PlayfairDisplay-Medium.ttf) format(.ttf);
+        color: #000;
+        font-size: 86px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 86px */
+    }
+    
+    @font-face {
+        font-family: "Playfair Display', serif";
+        src: url(/fonts/PlayfairDisplay-SemiBold.ttf) format(.ttf);
+        color: #000;
+        font-size: 86px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 103.2px */
+    }
+    
+    @font-face {
+        font-family: "Roboto", sans-serif;
+        src: url(/fonts/Roboto-Black.ttf) format(.ttf);
+        color: var(--White, #FFF);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
 
+    
+    @font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(/fonts/Roboto-Bold.ttf) format(.ttf);
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+    
+    @font-face {
+        font-family: "Roboto", sans-serif;
+        src: url(/fonts/Roboto-Medium.ttf) format(.ttf);
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        }
+    
+        @font-face {
+            font-family: "Roboto", sans-serif;
+            src: url(/fonts/Roboto-Regular.ttf) format(.ttf);
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+            }
 
 @font-face {
     font-family: "Roboto", sans-serif;
@@ -324,6 +407,7 @@ body {
     color: #000;
     gap: 20px;
     overflow-y: hidden;
+
 }
 
 
@@ -367,13 +451,7 @@ body {
 
 
 .kameron-content {
-    align-self: baseline;
-    color: #000;
-    font-family: "Roboto-Regular";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    justify-self: start;
+
 }
 
 .louisse {
@@ -382,6 +460,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
+
 }
 
 
@@ -395,15 +474,23 @@ body {
     justify-self: start;
 }
 
+
 .kameron-two {
+
     display: grid;
     grid-template-columns: 337px;
     grid-template-rows: repeat(3, 1fr);
     justify-content: end;
+
     align-items: end;
 }
 
 .kameron-two-content {
+
+    align-items:end;
+
+}
+
     align-self: baseline;
     color: #000;
     font-family: "Roboto-Regular";
@@ -416,6 +503,7 @@ body {
 
 .testimonials-block {
     display: grid;
+
     width: 100%;
     height: 760px;
     margin-top: 50px;
@@ -424,17 +512,19 @@ body {
     justify-content: center;
     column-gap: 1em;
 }
-
 .more {
     text-decoration: none;
-    color: #000;
+    color:  #000;
+
 }
 
 .website {
     grid-row: 1/2;
     grid-column: 1/2;
     max-width: 98px;
+
     transform: rotate(270deg);
+
     justify-self: end;
     align-self: center;
     color: #000;
@@ -460,6 +550,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+
 }
 
 .creativity {
@@ -475,6 +566,8 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+
+
 }
 
 .image-testimonials {
@@ -483,6 +576,7 @@ body {
     object-fit: cover;
     width: 100%;
 }
+
 
 .title-testimonials {
 
@@ -499,6 +593,7 @@ body {
     line-height: normal;
     padding: 40%;
     transform: rotate(-90deg);
+
 }
 
 .rights-block {
@@ -512,6 +607,7 @@ body {
 }
 
 .blockquote-testimonials {
+
     max-width: 221px;
     max-height: 304px;
     color: #000;
@@ -569,10 +665,12 @@ body {
     margin-left: 5%;
 }
 
+
 .armchair {
     grid-row: 2/3;
     grid-column: 2/3;
     width: 100%;
+
 }
 
 .strengths {
@@ -583,8 +681,10 @@ body {
    
 }
 
+
 .title-strengths {
     font-family: "Playfair Display";
+
     color: #000;
     font-size: 86px;
     font-style: normal;
@@ -664,11 +764,13 @@ body {
         text-align: left;
     }
 
+
     .list {
         display: inline-block;
         color: #000;
         font-family: "Bitter";
         font-size: 32px;
+
         font-style: normal;
         font-weight: 400;
         line-height: normal;
