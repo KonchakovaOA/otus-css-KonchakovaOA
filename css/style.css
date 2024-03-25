@@ -5,7 +5,6 @@ html {
     font-family: 'Roboto-Bold', serif;
     font-family: 'Roboto-Regular', serif;
     width: 100%;
-    /*height: 4395px;*/
     background: #FFF;
     margin: 0;
     padding: 0;
@@ -16,9 +15,12 @@ body {
     min-height: 100vh;
     width: 100%;
 
+
+
+
 }
 
-/*@font-face {
+@font-face {
     font-family: "Bitter", serif;
     src: url(/fonts/Bitter-Light.ttf) format(.ttf);
     color: #000;
@@ -46,7 +48,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
-    
+    /* 86px */
 }
 
 @font-face {
@@ -57,6 +59,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
+    /* 103.2px */
 }
 
 @font-face {
@@ -102,7 +105,7 @@ body {
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
-}*/
+}
 
 
 
@@ -235,7 +238,7 @@ body {
     display: flex;
     max-width: 571px;
     align-content: stretch;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 
 }
 
@@ -508,15 +511,17 @@ body {
 
 
 }
-
-.image-testimonials {
+.img-img {
     grid-row: 1/4;
     grid-column: 2/3;
+display: flex;
+min-width: 451px;
+
+}
+.image-testimonials {
+
     object-fit: cover;
     width: 100%;
-    display: block;
-   
-  
 
 }
 
@@ -526,17 +531,20 @@ body {
     grid-column: 3/4;
     max-width: 28px;
     max-height: 140px;
-    /*align-content: start;*/
+    display: flex;
     justify-self: start;
-  
+    writing-mode: vertical-lr;
+    align-items: baseline;
+    margin-left: 14%;
     color: #000;
     font-family: "Roboto-Bold";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 40%;
-    transform: rotate(-90deg);
+    transform: rotate(-180deg);
+    
+    
 
 
 
@@ -815,7 +823,19 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
+    .title-testimonials {
 
+        display: flex;
+       position: absolute;
+        align-items: baseline;
+        margin-left: 14%;
+        margin-top: -15%;
+        transform: rotate(270deg);
+
+    
+    
+    
+    }
    
 
 
