@@ -5,12 +5,18 @@ html {
     font-family: 'Roboto-Bold', serif;
     font-family: 'Roboto-Regular', serif;
     width: 100%;
+    /*height: 4395px;*/
     background: #FFF;
     margin: 0;
     padding: 0;
+
 }
 
+body {
+    min-height: 100vh;
+    width: 100%;
 
+}
 
 @font-face {
     font-family: "Bitter", serif;
@@ -65,90 +71,7 @@ html {
     line-height: normal;
 }
 
-@font-face {
-    font-family: "Bitter", serif;
-    src: url(/fonts/Bitter-Light.ttf) format(.ttf);
-    color: #000;
-    text-align: center;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 300;
-    }
-    
-    @font-face {
-        font-family: "Bitter", serif;
-        src: url(/fonts/Bitter-Regular.ttf) format(.ttf);
-        color: #000;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    @font-face {
-        font-family: "Playfair Display', serif";
-        src: url(/fonts/PlayfairDisplay-Medium.ttf) format(.ttf);
-        color: #000;
-        font-size: 86px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 100%; /* 86px */
-    }
-    
-    @font-face {
-        font-family: "Playfair Display', serif";
-        src: url(/fonts/PlayfairDisplay-SemiBold.ttf) format(.ttf);
-        color: #000;
-        font-size: 86px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 120%; /* 103.2px */
-    }
-    
-    @font-face {
-        font-family: "Roboto", sans-serif;
-        src: url(/fonts/Roboto-Black.ttf) format(.ttf);
-        color: var(--White, #FFF);
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
-    
 
-    
-    @font-face {
-    font-family: "Roboto", sans-serif;
-    src: url(/fonts/Roboto-Bold.ttf) format(.ttf);
-    color: #000;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    }
-    
-    @font-face {
-        font-family: "Roboto", sans-serif;
-        src: url(/fonts/Roboto-Medium.ttf) format(.ttf);
-        color: #000;
-        text-align: center;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        }
-    
-        @font-face {
-            font-family: "Roboto", sans-serif;
-            src: url(/fonts/Roboto-Regular.ttf) format(.ttf);
-            color: #000;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-transform: capitalize;
-            }
 
 @font-face {
     font-family: "Roboto", sans-serif;
@@ -182,10 +105,8 @@ html {
     text-transform: capitalize;
 }
 
-body {
-    min-height: 100vh;
-    width: 100%;
-}
+
+
 
 .container {
     display: flex;
@@ -227,6 +148,10 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 
+
+
+
+
 }
 
 .button {
@@ -244,6 +169,7 @@ body {
     background-size: no-repeat;
     background-position: center;
     background-size: cover;
+    /*width: 100%;*/
     height: 630px;
     align-items: stretch;
     margin-bottom: 0 auto;
@@ -290,6 +216,7 @@ body {
     font-size: 20px;
     line-height: 23px;
 
+
 }
 
 
@@ -301,6 +228,8 @@ body {
     margin-top: 10%;
     gap: 1em;
     justify-content: center;
+
+
 }
 
 .image-katya {
@@ -308,6 +237,7 @@ body {
     max-width: 571px;
     align-content: stretch;
     flex-grow: 1;
+
 }
 
 .title-biography {
@@ -326,6 +256,7 @@ body {
     padding: 50px;
     top: 1033px;
     align-content: flex-start;
+
 }
 
 
@@ -338,6 +269,9 @@ body {
     justify-content: center;
     align-content: space-between;
     flex-grow: 1;
+
+
+
 }
 
 
@@ -352,6 +286,7 @@ body {
     font-weight: 500;
     text-align: left;
     align-content: center;
+
 }
 
 
@@ -393,6 +328,7 @@ body {
     line-height: normal;
     margin-top: 36px;
     overflow: hidden;
+
 }
 
 .designers-block {
@@ -408,6 +344,7 @@ body {
     gap: 20px;
     overflow-y: hidden;
 
+
 }
 
 
@@ -421,6 +358,8 @@ body {
     font-weight: 700;
     line-height: normal;
     padding-left: 100px;
+
+
 }
 
 .jess {
@@ -428,6 +367,8 @@ body {
     grid-template-columns: 572px;
     grid-template-rows: repeat(3, 1fr);
     justify-content: end;
+
+
 }
 
 
@@ -447,10 +388,18 @@ body {
     grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
+
 }
 
 
 .kameron-content {
+    align-self: baseline;
+    color: #000;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    justify-self: start;
 
 }
 
@@ -460,7 +409,6 @@ body {
     grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
-
 }
 
 
@@ -474,23 +422,16 @@ body {
     justify-self: start;
 }
 
-
 .kameron-two {
-
     display: grid;
     grid-template-columns: 337px;
     grid-template-rows: repeat(3, 1fr);
     justify-content: end;
-
     align-items: end;
+
 }
 
 .kameron-two-content {
-
-    align-items:end;
-
-}
-
     align-self: baseline;
     color: #000;
     font-family: "Roboto-Regular";
@@ -503,7 +444,6 @@ body {
 
 .testimonials-block {
     display: grid;
-
     width: 100%;
     height: 760px;
     margin-top: 50px;
@@ -512,9 +452,10 @@ body {
     justify-content: center;
     column-gap: 1em;
 }
+
 .more {
     text-decoration: none;
-    color:  #000;
+    color: #000;
 
 }
 
@@ -522,9 +463,7 @@ body {
     grid-row: 1/2;
     grid-column: 1/2;
     max-width: 98px;
-
     transform: rotate(270deg);
-
     justify-self: end;
     align-self: center;
     color: #000;
@@ -533,6 +472,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+
 }
 
 
@@ -575,8 +515,11 @@ body {
     grid-column: 2/3;
     object-fit: cover;
     width: 100%;
-}
+    display: block;
+   
+  
 
+}
 
 .title-testimonials {
 
@@ -584,7 +527,9 @@ body {
     grid-column: 3/4;
     max-width: 28px;
     max-height: 140px;
+    /*align-content: start;*/
     justify-self: start;
+  
     color: #000;
     font-family: "Roboto-Bold";
     font-size: 24px;
@@ -594,9 +539,13 @@ body {
     padding: 40%;
     transform: rotate(-90deg);
 
+
+
+
 }
 
 .rights-block {
+
     grid-row: 1/4;
     grid-column: 6/7;
     display: grid;
@@ -604,10 +553,11 @@ body {
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     max-width: 451px;
+
+
 }
 
 .blockquote-testimonials {
-
     max-width: 221px;
     max-height: 304px;
     color: #000;
@@ -617,17 +567,24 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+
+
+
 }
 
 .image-sinitta {
     max-width: 221px;
+
     align-self: start;
     gap: 0 0 20px 0;
     align-items: start;
+
 }
 
 
 .title {
+
     align-self: baseline;
     color: #000;
     font-family: "Roboto";
@@ -639,6 +596,7 @@ body {
     margin-left: 15%;
     margin-bottom: 0;
     margin-top: 50px;
+
 }
 
 .strong-points-block {
@@ -655,6 +613,8 @@ body {
     overflow-y: hidden;
     justify-items: center;
     margin-top: 50px;
+
+
 }
 
 
@@ -665,12 +625,10 @@ body {
     margin-left: 5%;
 }
 
-
 .armchair {
     grid-row: 2/3;
     grid-column: 2/3;
     width: 100%;
-
 }
 
 .strengths {
@@ -678,13 +636,11 @@ body {
     grid-column: 3/4;
     width: 100%;
     justify-content: center;
-   
-}
 
+}
 
 .title-strengths {
     font-family: "Playfair Display";
-
     color: #000;
     font-size: 86px;
     font-style: normal;
@@ -698,10 +654,12 @@ body {
     grid-row: 2/3;
     grid-column: 4/5;
     max-height: 555px;
+
 }
 
 .list-strong {
     text-align: left;
+
 }
 
 .list {
@@ -714,6 +672,7 @@ body {
     line-height: normal;
     list-style: none;
     float: left;
+
 }
 
 @supports (display: flex) {
@@ -728,21 +687,26 @@ body {
         margin-top: 50px;
         flex-direction: row;
         justify-content: center;
+
     }
 
 
     .computer {
+
         width: 100%;
         margin-left: 5%;
     }
 
     .armchair {
+
         width: 100%;
     }
 
     .strengths {
+
         width: 100%;
         justify-content: center;
+
     }
 
     .title-strengths {
@@ -757,26 +721,31 @@ body {
     }
 
     .cafe-photo {
+
         max-height: 555px;
+
     }
 
     .list-strong {
         text-align: left;
-    }
 
+    }
 
     .list {
         display: inline-block;
         color: #000;
         font-family: "Bitter";
         font-size: 32px;
-
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         list-style: none;
         float: left;
+
     }
+
+
+
 }
 
 footer {
@@ -792,6 +761,8 @@ footer {
     margin-top: 100px;
     text-align: center;
     align-items: center;
+
+
 }
 
 .address {
@@ -802,6 +773,7 @@ footer {
     text-align: start;
     align-self: center;
     text-decoration: none;
+
 }
 
 .futer-adress {
@@ -825,6 +797,9 @@ footer {
     font-weight: 500;
     line-height: normal;
     gap: 2%;
+
+
+
 }
 
 .copyright {
@@ -840,7 +815,12 @@ footer {
     align-self: center;
 }
 
-/*@media screen and (min-width: 768px) and (max-width: 1020px) {
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+
+   
 
 
-}*/
+
+}
+
+
