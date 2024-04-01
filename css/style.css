@@ -4,7 +4,7 @@ html {
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto-Bold', serif;
     font-family: 'Roboto-Regular', serif;
-    width: 100%;
+    /*width: 100%;*/
     background: #FFF;
     margin: 0;
     padding: 0;
@@ -14,9 +14,6 @@ html {
 body {
     min-height: 100vh;
     width: 100%;
-
-
-
 
 }
 
@@ -137,7 +134,7 @@ body {
 
 .nav {
     display: flex;
-    max-width: 1195px;
+    /*max-width: 1195px;*/
     height: 28px;
     color: #000;
     text-align: right;
@@ -187,8 +184,8 @@ body {
     display: block;
     max-width: 690px;
     max-height: 360px;
-    top: 271px;
-    left: 375px;
+   /* top: 271px;*/
+    /*left: 375px;*/
     gap: 14px;
     margin: 0 auto;
     padding-top: 110px;
@@ -226,9 +223,9 @@ body {
 .biography-block {
     display: flex;
     min-height: 630px;
-    width: 100%;
+    width: 90%;
     margin-top: 10%;
-    gap: 1em;
+    /*gap: 1em;*/
     justify-content: center;
 
 
@@ -244,7 +241,7 @@ body {
 
 .title-biography {
     display: flex;
-    width: 115px;
+    max-width: 115px;
     height: 23px;
     color: #000;
     font-family: "Roboto-Bold";
@@ -256,7 +253,7 @@ body {
     justify-content: space-between;
     transform: rotate(270deg);
     padding: 50px;
-    top: 1033px;
+    /*top: 1033px;*/
     align-content: flex-start;
 
 }
@@ -295,7 +292,7 @@ body {
 
 .item-biography {
     display: inline-block;
-    width: auto;
+    /*width: auto;*/
     height: auto;
     color: #000;
     text-align: left;
@@ -338,7 +335,7 @@ body {
     width: 100%;
     height: 750px;
     margin-top: 50px;
-    margin-bottom: 200px;
+   margin-bottom: 200px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
@@ -446,7 +443,7 @@ body {
 
 .testimonials-block {
     display: grid;
-    width: 100%;
+    max-width: 100%;
     height: 760px;
     margin-top: 50px;
     grid-template-columns: 15% 20% 5% 10% 5% 30%;
@@ -515,7 +512,7 @@ body {
     grid-row: 1/4;
     grid-column: 2/3;
 display: flex;
-min-width: 451px;
+max-width: 451px;
 
 }
 .image-testimonials {
@@ -832,12 +829,44 @@ footer {
         margin-top: -15%;
         transform: rotate(270deg);
 
+    }
+
     
-    
+.biography-block {
+    flex-wrap: wrap;
+    min-height: 630px;
+    min-width: 760px;
+
+}
+
+    .image-katya {
+        order: -1;
+        min-width: 450px;
+        min-height: 400px;
+       
+       
+     
     
     }
-   
+    .title-biography {
+        
+        display: flex;
+        position: absolute;
+        align-items: baseline;
+        justify-content: start;
+        /*margin-left: 14%;*/
+        margin-top: -15%;
+        transform: rotate(-360deg);
 
+    }
+
+    .strong-points-block {
+        grid-auto-flow:row;
+
+
+
+    }
+ 
 
 
 }
