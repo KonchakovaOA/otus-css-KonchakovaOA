@@ -4,11 +4,16 @@ html {
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto-Bold', serif;
     font-family: 'Roboto-Regular', serif;
+
     /*width: 100%;*/
     background: #FFF;
 
 
 }
+
+
+}
+
 
 body {
     min-height: 100vh;
@@ -47,7 +52,9 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
+
    
+
 }
 
 @font-face {
@@ -58,7 +65,9 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
+
    
+
 }
 
 @font-face {
@@ -105,7 +114,9 @@ body {
     line-height: normal;
     text-transform: capitalize;
 }
+
 */
+
 
 
 
@@ -136,7 +147,9 @@ body {
 
 .nav {
     display: flex;
+
     /*max-width: 1195px;*/
+
     height: 28px;
     color: #000;
     text-align: right;
@@ -153,6 +166,7 @@ body {
 
 
 
+
 }
 
 .button {
@@ -164,6 +178,7 @@ body {
 
 
 .hero-section {
+
 
     background-color: DDD0C7;
     background-image: url(/img/background.jpg);
@@ -186,8 +201,10 @@ body {
     display: block;
     max-width: 690px;
     max-height: 360px;
+
    /* top: 271px;*/
     /*left: 375px;*/
+
     gap: 14px;
     margin: 0 auto;
     padding-top: 110px;
@@ -225,15 +242,18 @@ body {
 .biography-block {
     display: flex;
     min-height: 630px;
+
     width: 90%;
     margin-top: 10%;
     /*gap: 1em;*/
+
     justify-content: center;
 
 
 }
 
 .image-katya {
+
     display: flex;
     max-width: 571px;
     align-content: stretch;
@@ -244,6 +264,7 @@ body {
 .title-biography {
     display: flex;
     max-width: 115px;
+
     height: 23px;
     color: #000;
     font-family: "Roboto-Bold";
@@ -255,6 +276,7 @@ body {
     justify-content: space-between;
     transform: rotate(270deg);
     padding: 50px;
+
     /*top: 1033px;*/
     align-content: flex-start;
 
@@ -289,6 +311,7 @@ body {
     align-content: center;
 
 }
+
 
 
 
@@ -445,7 +468,9 @@ body {
 
 .testimonials-block {
     display: grid;
+
     max-width: 100%;
+
     height: 760px;
     margin-top: 50px;
     grid-template-columns: 15% 20% 5% 10% 5% 30%;
@@ -509,18 +534,21 @@ body {
     line-height: 26px;
 
 
+
 }
 .img-img {
     grid-row: 1/4;
     grid-column: 2/3;
+
 display: flex;
 max-width: 451px;
 
-}
-.image-testimonials {
 
     object-fit: cover;
     width: 100%;
+    display: block;
+   
+  
 
 }
 
@@ -530,20 +558,24 @@ max-width: 451px;
     grid-column: 3/4;
     max-width: 28px;
     max-height: 140px;
+
     display: flex;
     justify-self: start;
     writing-mode: vertical-lr;
     align-items: baseline;
     margin-left: 14%;
+
     color: #000;
     font-family: "Roboto-Bold";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
     transform: rotate(-180deg);
     
     
+
 
 
 
@@ -586,10 +618,13 @@ max-width: 451px;
     gap: 0 0 20px 0;
     align-items: start;
 
+
 }
 
 
+
 .title {
+
 
     align-self: baseline;
     color: #000;
@@ -697,6 +732,7 @@ max-width: 451px;
     }
 
 
+
     .computer {
 
         width: 100%;
@@ -746,7 +782,9 @@ max-width: 451px;
         font-weight: 400;
         line-height: normal;
         list-style: none;
+
         /*float: left;*/
+
 
     }
 
@@ -822,6 +860,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
+
     .title-testimonials {
 
         display: flex;
@@ -1141,6 +1180,7 @@ footer {
     transform: rotate(360deg);
     order: 8;
 }
+
 
 
 
