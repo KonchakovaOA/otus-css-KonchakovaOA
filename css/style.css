@@ -1092,12 +1092,6 @@ order: -1;
     order: -3;
 }
 
-.bio-conetent {
-    transform: none;
-
-}
-
-
 .list-bio {
     flex-direction: column;
   
