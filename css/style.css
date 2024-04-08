@@ -326,7 +326,13 @@ margin-left: 20px;
 
 .list-bio {
     display: flex;
-  
+   
+
+}
+.item-bi:nth-of-type(n+2):before {
+    content: "/";
+    width: 10px;
+    height: 10px;
 
 }
 
@@ -959,92 +965,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-/*.biography-block {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0;
-    justify-content: space-around;
-    gap: 0;
-    margin-bottom: 18%;
-}
-.title-biography {
-    order: -2;
-    width: 5%;
-    transform: rotate(360deg);
-    translate: -50px;
-    font-size: 18px;
-    width: 92px;
-    margin-left: 80%;
-}
 
-
-
-.item-biography {
-    order: -2;
-    display: flex;
-    flex-direction: column;
-    width: 56%;
-    margin-bottom: 13%;
-    padding-left: 2%;
-
-}
-
-.mob-item {
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    width: 56%;
-    margin-bottom: 13%;
-    padding-left: 2%;
-    align-content: flex-start;
-    align-items: flex-start;
-}
-
-.dash {
-    display: none;
-    background-color: white;
-}
-
-.blockquote {
-    order: 0;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 11%;
-}
-.quote {
-    margin: 0;
-    height: 229px;
-    white-space: pre-line;
-}
-.h-katya{
-    white-space: nowrap;
-    font-size: 64px;
-    font-weight: 300;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 9%;
-    display: flex;
-}
-.h-katya::before {
-    content: "- ";
-}
-.image-katya {
-    position: relative;
-    order: 3;
-}
-.img-katya img {
-    display: none;
-}
-.image-katya::after {
-    content: "";
-    display:block;
-    background-image: url(/img/katya\ mobile.png);
-    background-position: center;
-    background-repeat: no-repeat;   
-    width: 90vh;
-    height: 400px;
-    
-}*/
 
 .biography-block {
 
@@ -1054,6 +975,8 @@ footer {
     justify-content: space-around;
     gap: 0;
     margin-bottom: 18%;
+    flex-direction: column-reverse;
+    position: relative;
 
 
    
@@ -1061,21 +984,27 @@ footer {
 
 
 .img-katya-img::after {
-      display: flex;
-        background-image: url(/img/katya\ mobile.png);
+     
+        background-image: url(/img/katya-mobile.png);
         background-position: center;
         background-repeat: no-repeat;   
-        width: 450px;
+        width: 100%;
         height: 400px;
-        order: 2;
+      
 
 
 }
 
 .bio {
-order: -1;
+    max-width: 100%;
 
 
+
+}
+
+.bio-conetent {
+    transform: none;
+    translate: -50px;
 }
 .title-biography {
   
@@ -1084,50 +1013,55 @@ order: -1;
    top: 0;
    right: 0;
    width: auto;
-  
+   transform: rotate(90deg);
+
 
 }
 
+
+
 .item-biography {
     order: -3;
+   
 }
 
 .list-bio {
     flex-direction: column;
-  
-
 }
 
-.item-bi :nth-of-type(n+2)::before{
-    content: '-';
 
-}
 
 .item-bi::before {
-width: 5px;
-height: 5px;
-content: '-';
+content: "-";
 
 }
 
-.blockquote{
-    order: -2;
+.item-bi:nth-of-type(n+2):before {
+    content: "-";
+    width: 10px;
+    height: 10px;
+
+}
+
+.blockquote {
+    order: -1;
+    
 }
 .h-katya h2 {
-    order: -1;
-    white-space: nowrap;
+    
+        white-space: nowrap;
         font-size: 64px;
         font-weight: 300;
         margin: 0;
         text-align: center;
         margin-bottom: 9%;
         display: flex;
+        order: 2;
       
 
 }
 .h-katya h2::before{
     content: "-";
-    
 
 }
 
@@ -1135,6 +1069,10 @@ content: '-';
     display: none;
 }
 
+.content-block {
+    max-width: 90%;
+    
+}
 
 *****
 
