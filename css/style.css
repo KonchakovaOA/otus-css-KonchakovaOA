@@ -4,12 +4,7 @@ html {
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto-Bold', serif;
     font-family: 'Roboto-Regular', serif;
-
-    /*width: 100%;*/
     background: #FFF;
-
-
-}
 
 
 }
@@ -22,7 +17,13 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+
 }
+
+h2, h3, ul, p {
+    margin: 0;
+    padding: 0;
+  }
 
 /*@font-face {
     font-family: "Bitter", serif;
@@ -147,9 +148,6 @@ body {
 
 .nav {
     display: flex;
-
-    /*max-width: 1195px;*/
-
     height: 28px;
     color: #000;
     text-align: right;
@@ -185,7 +183,6 @@ body {
     background-size: no-repeat;
     background-position: center;
     background-size: cover;
-    /*width: 100%;*/
     height: 630px;
     align-items: stretch;
     margin-bottom: 0 auto;
@@ -201,10 +198,6 @@ body {
     display: block;
     max-width: 690px;
     max-height: 360px;
-
-   /* top: 271px;*/
-    /*left: 375px;*/
-
     gap: 14px;
     margin: 0 auto;
     padding-top: 110px;
@@ -237,41 +230,53 @@ body {
 
 }
 
+ul {
+    list-style: none;
+  }
 
+  .img-katya-img{
+    max-width: 571px;
+    justify-content: end;
+
+}
 
 .biography-block {
     display: flex;
-    width: 90%;
+    max-width: 90%;
     margin-top: 10%;
     justify-content: center;
-
-
+    margin-right: 5%;
+   
 }
 
 
+
+.bio {
     display: flex;
-    max-width: 571px;
-    align-content: stretch;
+flex-direction: column;
+max-width: 48%;
+margin-left: 20px;
+
 
 }
+
+
 
 .title-biography {
-    display: flex;
-
-    height: 23px;
+    padding: 90px 0 0 0;
+    width: 50px;
     color: #000;
     font-family: "Roboto-Bold";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    flex-direction: column;
-    justify-content: space-between;
-    transform: rotate(270deg);
-    padding: 50px;
 
-    /*top: 1033px;*/
-    align-content: flex-start;
+}
+
+.bio-content {
+    display: block;
+    transform: rotate(-90deg);
 
 }
 
@@ -284,16 +289,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: space-between;
-    flex-grow: 1;
-
-
-
+ 
 }
 
 
 .h-katya {
-    display: flex;
-    max-width: 466px;
+    padding: 90px 0 0 0;
+    width: 50px;
     height: auto;
     font-family: 'Playfair Display', serif;
     color: #000;
@@ -302,6 +304,7 @@ body {
     font-weight: 500;
     text-align: left;
     align-content: center;
+
 
 }
 
@@ -318,19 +321,32 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-top: 5px;
+}
+
+.list-bio {
+    display: flex;
+  
+
+}
+
+
+.dash-bio {
+    display: block;
+    width: 20px;
+    height: 6px;
+    background-color: #000;
+    margin-top: 18px;
+     
 }
 
 .blockquote {
     display: flex;
-    width: auto;
+    max-width: 455px;
     height: auto;
 }
 
-.dash {
-    width: 20px;
-    height: 6px;
-    background-color: #000;
-}
+
 
 .quote {
     display: flex;
@@ -341,7 +357,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 36px;
+    margin-top: 18px;
     overflow: hidden;
 
 }
@@ -351,7 +367,7 @@ body {
     width: 100%;
     height: 750px;
     margin-top: 50px;
-   margin-bottom: 200px;
+    margin-bottom: 200px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
@@ -703,7 +719,7 @@ max-width: 451px;
     font-weight: 400;
     line-height: normal;
     list-style: none;
-    //*float: left;*/
+    /*float: left;*/
 
 }
 
@@ -899,9 +915,11 @@ footer {
         border: 1px solid #000;
         margin-bottom: 0.2%;
     }
+
     .logo {
         display: none;
     }
+
     .nav{
         display: flex;
         flex-wrap: nowrap;
@@ -911,12 +929,14 @@ footer {
         align-items: center;
         top: 10%;
     }
+
     .button {
         width: 23.5px;
         text-overflow: clip;
         overflow: hidden;
         margin: 0;
     }
+
     button a {
     font-weight: 400;
         font-size: 40px;
@@ -939,7 +959,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.biography-block {
+/*.biography-block {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
@@ -957,9 +977,6 @@ footer {
     margin-left: 80%;
 }
 
-.content-block {
-
-}
 
 
 .item-biography {
@@ -1027,7 +1044,108 @@ footer {
     width: 90vh;
     height: 400px;
     
+}*/
+
+.biography-block {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: space-around;
+    gap: 0;
+    margin-bottom: 18%;
+
+
+   
 }
+
+
+.img-katya-img::after {
+      display: flex;
+        background-image: url(/img/katya\ mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;   
+        width: 450px;
+        height: 400px;
+        order: 2;
+
+
+}
+
+.bio {
+order: -1;
+
+
+}
+.title-biography {
+  
+  position: absolute;
+   padding: 0;
+   top: 0;
+   right: 0;
+   width: auto;
+  
+
+}
+
+.item-biography {
+    order: -3;
+}
+
+.bio-conetent {
+    transform: none;
+
+}
+
+
+.list-bio {
+    flex-direction: column;
+  
+
+}
+
+.item-bi :nth-of-type(n+2)::before{
+    content: '-';
+
+}
+
+.item-bi::before {
+width: 5px;
+height: 5px;
+content: '-';
+
+}
+
+.blockquote{
+    order: -2;
+}
+.h-katya h2 {
+    order: -1;
+    white-space: nowrap;
+        font-size: 64px;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 9%;
+        display: flex;
+      
+
+}
+.h-katya h2::before{
+    content: "-";
+    
+
+}
+
+.dash-bio {
+    display: none;
+}
+
+
+*****
+
+
+
 
 .designers-block {
     margin-bottom: 13.5%;
@@ -1136,6 +1254,7 @@ footer {
    
    
 }
+
 .website  {
     translate: 0;
     margin: 0;
