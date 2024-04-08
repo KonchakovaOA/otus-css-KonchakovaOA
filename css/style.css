@@ -241,29 +241,22 @@ body {
 
 .biography-block {
     display: flex;
-    min-height: 630px;
-
     width: 90%;
     margin-top: 10%;
-    /*gap: 1em;*/
-
     justify-content: center;
 
 
 }
 
-.image-katya {
 
     display: flex;
     max-width: 571px;
     align-content: stretch;
-    /*flex-grow: 1;*/
 
 }
 
 .title-biography {
     display: flex;
-    max-width: 115px;
 
     height: 23px;
     color: #000;
@@ -317,7 +310,6 @@ body {
 
 .item-biography {
     display: inline-block;
-    /*width: auto;*/
     height: auto;
     color: #000;
     text-align: left;
@@ -337,7 +329,6 @@ body {
 .dash {
     width: 20px;
     height: 6px;
-    display: block;
     background-color: #000;
 }
 
@@ -881,17 +872,6 @@ footer {
 }
 
 
-    .title-biography {
-        
-        display: flex;
-        position: absolute;
-        align-items: baseline;
-        justify-content: start;
-        /*margin-left: 14%;*/
-        margin-top: -15%;
-        transform: rotate(-360deg);
-
-    }
 
     .strong-points-block {
         grid-auto-flow:row;
