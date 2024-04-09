@@ -927,6 +927,8 @@ footer {
     }
 
     .nav{
+        width: 100%;
+        height: 82px;
         display: flex;
         flex-wrap: nowrap;
         padding: 0;
@@ -937,17 +939,20 @@ footer {
     }
 
     .button {
-        width: 23.5px;
+      width: 30px;
+      height: 45px;
         text-overflow: clip;
         overflow: hidden;
         margin: 0;
+        font-weight: 400;
+        font-size: 40px;
+        font-family: 'Bitter-Regular';
+        font-style: normal;
+        letter-spacing: 10px;
+      
     }
 
-    button a {
-    font-weight: 400;
-        font-size: 40px;
 
-}
 
 .hero-section {
     height: 764px;
@@ -985,14 +990,14 @@ footer {
 
 .img-katya-img::after {
      
-        background-image: url(/img/katya-mobile.png);
+        background-image: url(/img/jared-weiss-mob.jpg);
         background-position: center;
         background-repeat: no-repeat;   
         width: 100%;
         height: 400px;
+        object-fit: cover;
+        margin: 0;
       
-
-
 }
 
 .bio {
@@ -1074,43 +1079,66 @@ content: "-";
     
 }
 
-*****
 
-
-
-
+.title-designers {
+    display: none;
+    
+    }
+    
 .designers-block {
-    margin-bottom: 13.5%;
-}
-.slider {
-    margin-left: 2%;
-    gap: 4%;
-}
-.title-designers>h2 {
-    font-weight: 700;
-    font-size: 18px;
-    margin-left: 3.5%;
-    margin-bottom: 6%;
+    
+   display: grid;
+    gap: 10%;
+    grid-template-columns: repeat(310px 310px 310px 310px);
+    justify-content: space-between;
+    grid-template-areas:
+      "jess kam lou kam-tw"
+     
 }
 
-.photo-jess {
-    max-width: 310px;
-    height: 440px;
-}
-.jess-content>h3 {
-    text-align: start;
-    margin-left: 0;
-}
-.jess-content>p {
-    text-align: start;
-    margin-left: 0; 
-}
-.jess-content b {
-    display: flex;
-    margin-left: 0;
-    justify-content: flex-start;
+
+.jess {
+    grid-area: jess;
+
+
 }
 
+.jess::after { 
+    background-image: url(/img/spurwing.jpg);
+
+  
+}
+.jess-content{
+justify-content: start;
+}
+
+.kameron {
+    grid-area: kam;
+ 
+}
+
+
+
+
+.louisse {
+    grid-area: lou;
+
+}
+
+
+
+
+.kameron-two {
+    grid-area: kam-tw;
+
+
+}
+
+
+
+
+
+****
 .testimonials-block {
     display: flex;
     flex-direction: row;
@@ -1119,6 +1147,8 @@ content: "-";
    
    
 }
+
+
 .title-testimonials {
         
     display: flex;
@@ -1168,24 +1198,7 @@ content: "-";
 }
 
 
-/*.web-more {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    min-width: 450px;
-   /*height: 96px;
-    justify-content: space-between;
-    order: 4;
-    transform: rotate(90deg);
-}*/
 
-.more {
-   
- 
- 
-   
-   
-}
 
 .website  {
     translate: 0;
