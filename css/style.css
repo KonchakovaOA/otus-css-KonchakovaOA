@@ -481,17 +481,30 @@ margin-left: 20px;
 
 .testimonials-block {
     display: grid;
-
     max-width: 100%;
-
     height: 760px;
     margin-top: 50px;
-    grid-template-columns: 15% 20% 5% 10% 5% 30%;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 15% 40% 10% 30%;
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     column-gap: 1em;
+    grid-template-areas:
+    
+    "ts-a ts-b ts-c ts-d"
+    "ts-a ts-b ts-c ts-e"
+     
+     
+      
 }
 
+.link-ts {
+    display: flex;
+    max-width: 98px;
+    height: 760px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-area: ts-a;
+}
 .more {
     text-decoration: none;
     color: #000;
@@ -499,8 +512,7 @@ margin-left: 20px;
 }
 
 .website {
-    grid-row: 1/2;
-    grid-column: 1/2;
+    display: block;
     max-width: 98px;
     transform: rotate(270deg);
     justify-self: end;
@@ -517,8 +529,7 @@ margin-left: 20px;
 
 
 .brand {
-    grid-row: 2/3;
-    grid-column: 1/2;
+    display: block;
     justify-self: end;
     max-width: 98px;
     transform: rotate(270deg);
@@ -533,8 +544,7 @@ margin-left: 20px;
 }
 
 .creativity {
-    grid-row: 3/4;
-    grid-column: 1/2;
+    display: block;
     justify-self: end;
     max-width: 98px;
     transform: rotate(270deg);
@@ -550,16 +560,9 @@ margin-left: 20px;
 
 }
 .img-img {
-    grid-row: 1/4;
-    grid-column: 2/3;
-
-display: flex;
-max-width: 451px;
-
-
+    grid-area: ts-b;
     object-fit: cover;
-    width: 100%;
-    display: block;
+    flex-basis: 451px;
    
   
 
@@ -567,8 +570,7 @@ max-width: 451px;
 
 .title-testimonials {
 
-    grid-row: 1/4;
-    grid-column: 3/4;
+    grid-area: ts-c;
     max-width: 28px;
     max-height: 140px;
 
@@ -595,7 +597,7 @@ max-width: 451px;
 
 }
 
-.rights-block {
+/*.rights-block {
 
     grid-row: 1/4;
     grid-column: 6/7;
@@ -606,7 +608,7 @@ max-width: 451px;
     max-width: 451px;
 
 
-}
+}*/
 
 .blockquote-testimonials {
     max-width: 221px;
@@ -618,15 +620,17 @@ max-width: 451px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-
-
-
+    grid-area: ts-d;
 }
+
+
+
+
+
 
 .image-sinitta {
     max-width: 221px;
-
+    grid-area: ts-e;
     align-self: start;
     gap: 0 0 20px 0;
     align-items: start;
@@ -634,7 +638,7 @@ max-width: 451px;
 
 }
 
-
+******
 
 .title {
 
@@ -906,7 +910,9 @@ footer {
 
 @media screen and (max-width: 767px) {
     .body {
-        padding-bottom: 82px;
+        padding: 0;
+        margin: 0;
+       
     }
 
     .container {
@@ -993,7 +999,7 @@ footer {
         background-image: url(/img/jared-weiss-mob.jpg);
         background-position: center;
         background-repeat: no-repeat;   
-        width: 100%;
+        max-width: 100%;
         height: 400px;
         object-fit: cover;
         margin: 0;
@@ -1002,9 +1008,6 @@ footer {
 
 .bio {
     max-width: 100%;
-
-
-
 }
 
 .bio-conetent {
@@ -1088,9 +1091,12 @@ content: "-";
 .designers-block {
     
    display: grid;
-    gap: 10%;
-    grid-template-columns: repeat(310px 310px 310px 310px);
-    justify-content: space-between;
+    gap: 16px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    height: 550px;
     grid-template-areas:
       "jess kam lou kam-tw"
      
@@ -1099,17 +1105,19 @@ content: "-";
 
 .jess {
     grid-area: jess;
-
-
+    grid-template-columns: 310px;
+    justify-content: center;
 }
 
 .jess::after { 
     background-image: url(/img/spurwing.jpg);
-
-  
+     
 }
 .jess-content{
 justify-content: start;
+justify-self: start;
+
+
 }
 
 .kameron {
@@ -1138,44 +1146,36 @@ justify-content: start;
 
 
 
-****
 .testimonials-block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-   
-   
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height:Hug (705px);
+    padding:0px, 16px, 0px, 16px;
+    gap: 28px;
+    justify-content: center;
+    grid-template-areas:
+    "ts-c"
+    "ts-d"
+    "ts-e"
+    "ts-a";
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 
 .title-testimonials {
-        
     display: flex;
-    position: absolute;
-    align-items: baseline;
-    justify-content: start;
+    width: 100%;
     transform: rotate(270deg);
-    align-self: flex-end;
-    padding-right: 4.5%;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 25%;
-    margin-top: 10%;
-    order: 0;
-
+    justify-content: end;
+   
 }
 
 .blockquote-testimonials {
-    display: flex;
-    order: 2;
-    max-width: 337px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 5%;
+    justify-content: center;
+
 }
-.blockquote-testimonials>p {
+.blockquote-testimonials {
     font-weight: 300;
     font-size: 30px;
     margin: 0;
@@ -1194,35 +1194,38 @@ justify-content: start;
     height: 390px;
     width: 414px;
     margin: 0;
-    order: 3;
+    justify-content: center;
+ 
 }
 
 
-
+.link-ts {
+    max-width: 412px;
+    max-height: 96px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10%;
+}
 
 .website  {
-    translate: 0;
-    margin: 0;
+
     transform: rotate(360deg);
-    order: 6;
+
     
 }
 
+
 .brand  {
-    translate: 0;
-    margin: 0;
+
     transform: rotate(360deg);
-    align-self: start;
-    order: 7;
-  
 }
 
     
 .creativity {
-    translate: 0;
-    margin: 0;
+
     transform: rotate(360deg);
-    order: 8;
+   
 }
 
 
