@@ -617,7 +617,7 @@ margin-left: 20px;
 
 
 .image-sinitta {
-    max-width: 221px;
+    /*max-width: 221px;*/
     grid-area: ts-e;
     align-self: start;
     gap: 0 0 20px 0;
@@ -1220,6 +1220,51 @@ transform: rotate(360deg);
     transform: rotate(360deg);
    
 }
+***
+
+.title {
+
+    margin-top: 150px;
+
+}
+
+.strong-points-block {
+   
+ 
+
+}
+
+
+.computer {
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+}
+
+.armchair {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 100%;
+}
+
+.strengths {
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+
+}
+
+.title-strengths {
+
+}
+
+.cafe-photo {
+    grid-row: 2/3;
+    grid-column: 4/5;
+ 
+
+}
+
 
 
 
