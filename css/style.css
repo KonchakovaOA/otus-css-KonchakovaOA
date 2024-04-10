@@ -1149,30 +1149,31 @@ justify-self: start;
 .testimonials-block {
     grid-template-columns:  1fr;
     grid-template-rows: repeat(4, 1fr);
-    height:Hug (705px);
     padding:0px, 16px, 0px, 16px;
     gap: 28px;
-    justify-content: center;
+    min-height: 900px;
     grid-template-areas:
     "ts-c"
     "ts-d"
     "ts-e"
     "ts-a";
     align-items: center;
+    justify-items:center
     margin-bottom: 100px;
 }
 
 
 .title-testimonials {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     transform: rotate(270deg);
-    justify-content: end;
+
+    align-items: end;
    
 }
 
 .blockquote-testimonials {
-    justify-content: center;
+   max-width: 100%;
 
 }
 .blockquote-testimonials {
@@ -1192,7 +1193,7 @@ justify-self: start;
     background-position: center;
     background-repeat: no-repeat;
     height: 390px;
-    width: 414px;
+    max-width: 414px;
     margin: 0;
     justify-content: center;
  
@@ -1200,30 +1201,36 @@ justify-self: start;
 
 
 .link-ts {
-    max-width: 412px;
+  
     max-height: 96px;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:10%;
+    gap:16px;
+    max-width: 100%;
+    margin-left:10px ;
 }
 
 .website  {
+display: block;
+max-width: 48%;
+transform: rotate(360deg);
 
-    transform: rotate(360deg);
 
     
 }
 
 
 .brand  {
-
+    display: block;
+    max-width: 48%;
     transform: rotate(360deg);
 }
 
     
 .creativity {
-
+    display: block;
+    max-width: 48%;
     transform: rotate(360deg);
    
 }
