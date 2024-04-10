@@ -597,18 +597,6 @@ margin-left: 20px;
 
 }
 
-/*.rights-block {
-
-    grid-row: 1/4;
-    grid-column: 6/7;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    max-width: 451px;
-
-
-}*/
 
 .blockquote-testimonials {
     max-width: 221px;
