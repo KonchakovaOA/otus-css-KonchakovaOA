@@ -1158,16 +1158,17 @@ justify-self: start;
     "ts-e"
     "ts-a";
     align-items: center;
-    justify-items:center
-    margin-bottom: 100px;
+    justify-items:center;
+    margin-bottom:  100px;
 }
 
 
 .title-testimonials {
-    display: flex;
-    max-width: 100%;
+    
+    width: 100%;
+    height: 100%;
     transform: rotate(270deg);
-
+    text-align: end;
     align-items: end;
    
 }
@@ -1189,13 +1190,10 @@ justify-self: start;
 .image-sinitta::after {
    
     display: block;
-    background-image: url(/img/sinitta-leunen-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 390px;
-    max-width: 414px;
+    width: 100%;
     margin: 0;
-    justify-content: center;
+    object-fit: cover;
+    
  
 }
 
