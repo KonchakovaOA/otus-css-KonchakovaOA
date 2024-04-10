@@ -4,12 +4,7 @@ html {
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto-Bold', serif;
     font-family: 'Roboto-Regular', serif;
-
-    /*width: 100%;*/
     background: #FFF;
-
-
-}
 
 
 }
@@ -22,7 +17,13 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+
 }
+
+h2, h3, ul, p {
+    margin: 0;
+    padding: 0;
+  }
 
 /*@font-face {
     font-family: "Bitter", serif;
@@ -147,9 +148,6 @@ body {
 
 .nav {
     display: flex;
-
-    /*max-width: 1195px;*/
-
     height: 28px;
     color: #000;
     text-align: right;
@@ -185,7 +183,6 @@ body {
     background-size: no-repeat;
     background-position: center;
     background-size: cover;
-    /*width: 100%;*/
     height: 630px;
     align-items: stretch;
     margin-bottom: 0 auto;
@@ -201,10 +198,6 @@ body {
     display: block;
     max-width: 690px;
     max-height: 360px;
-
-   /* top: 271px;*/
-    /*left: 375px;*/
-
     gap: 14px;
     margin: 0 auto;
     padding-top: 110px;
@@ -237,48 +230,53 @@ body {
 
 }
 
+ul {
+    list-style: none;
+  }
 
+  .img-katya-img{
+    max-width: 571px;
+    justify-content: end;
+
+}
 
 .biography-block {
     display: flex;
-    min-height: 630px;
-
-    width: 90%;
+    max-width: 90%;
     margin-top: 10%;
-    /*gap: 1em;*/
-
     justify-content: center;
-
-
+    margin-right: 5%;
+   
 }
 
-.image-katya {
 
+
+.bio {
     display: flex;
-    max-width: 571px;
-    align-content: stretch;
-    /*flex-grow: 1;*/
+flex-direction: column;
+max-width: 48%;
+margin-left: 20px;
+
 
 }
+
+
 
 .title-biography {
-    display: flex;
-    max-width: 115px;
-
-    height: 23px;
+    padding: 90px 0 0 0;
+    width: 50px;
     color: #000;
     font-family: "Roboto-Bold";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    flex-direction: column;
-    justify-content: space-between;
-    transform: rotate(270deg);
-    padding: 50px;
 
-    /*top: 1033px;*/
-    align-content: flex-start;
+}
+
+.bio-content {
+    display: block;
+    transform: rotate(-90deg);
 
 }
 
@@ -291,16 +289,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: space-between;
-    flex-grow: 1;
-
-
-
+ 
 }
 
 
 .h-katya {
-    display: flex;
-    max-width: 466px;
+    padding: 90px 0 0 0;
+    width: 50px;
     height: auto;
     font-family: 'Playfair Display', serif;
     color: #000;
@@ -310,6 +305,7 @@ body {
     text-align: left;
     align-content: center;
 
+
 }
 
 
@@ -317,7 +313,6 @@ body {
 
 .item-biography {
     display: inline-block;
-    /*width: auto;*/
     height: auto;
     color: #000;
     text-align: left;
@@ -326,20 +321,38 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-top: 5px;
+}
+
+.list-bio {
+    display: flex;
+   
+
+}
+.item-bi:nth-of-type(n+2):before {
+    content: "/";
+    width: 10px;
+    height: 10px;
+
+}
+
+
+.dash-bio {
+    display: block;
+    width: 20px;
+    height: 6px;
+    background-color: #000;
+    margin-top: 18px;
+     
 }
 
 .blockquote {
     display: flex;
-    width: auto;
+    max-width: 455px;
     height: auto;
 }
 
-.dash {
-    width: 20px;
-    height: 6px;
-    display: block;
-    background-color: #000;
-}
+
 
 .quote {
     display: flex;
@@ -350,7 +363,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 36px;
+    margin-top: 18px;
     overflow: hidden;
 
 }
@@ -360,7 +373,7 @@ body {
     width: 100%;
     height: 750px;
     margin-top: 50px;
-   margin-bottom: 200px;
+    margin-bottom: 200px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
@@ -468,17 +481,30 @@ body {
 
 .testimonials-block {
     display: grid;
-
     max-width: 100%;
-
     height: 760px;
     margin-top: 50px;
-    grid-template-columns: 15% 20% 5% 10% 5% 30%;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 15% 40% 10% 30%;
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     column-gap: 1em;
+    grid-template-areas:
+    
+    "ts-a ts-b ts-c ts-d"
+    "ts-a ts-b ts-c ts-e"
+     
+     
+      
 }
 
+.link-ts {
+    display: flex;
+    max-width: 98px;
+    height: 760px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-area: ts-a;
+}
 .more {
     text-decoration: none;
     color: #000;
@@ -486,8 +512,7 @@ body {
 }
 
 .website {
-    grid-row: 1/2;
-    grid-column: 1/2;
+    display: block;
     max-width: 98px;
     transform: rotate(270deg);
     justify-self: end;
@@ -504,8 +529,7 @@ body {
 
 
 .brand {
-    grid-row: 2/3;
-    grid-column: 1/2;
+    display: block;
     justify-self: end;
     max-width: 98px;
     transform: rotate(270deg);
@@ -520,8 +544,7 @@ body {
 }
 
 .creativity {
-    grid-row: 3/4;
-    grid-column: 1/2;
+    display: block;
     justify-self: end;
     max-width: 98px;
     transform: rotate(270deg);
@@ -537,16 +560,9 @@ body {
 
 }
 .img-img {
-    grid-row: 1/4;
-    grid-column: 2/3;
-
-display: flex;
-max-width: 451px;
-
-
+    grid-area: ts-b;
     object-fit: cover;
-    width: 100%;
-    display: block;
+    flex-basis: 451px;
    
   
 
@@ -554,8 +570,7 @@ max-width: 451px;
 
 .title-testimonials {
 
-    grid-row: 1/4;
-    grid-column: 3/4;
+    grid-area: ts-c;
     max-width: 28px;
     max-height: 140px;
 
@@ -582,18 +597,6 @@ max-width: 451px;
 
 }
 
-.rights-block {
-
-    grid-row: 1/4;
-    grid-column: 6/7;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    max-width: 451px;
-
-
-}
 
 .blockquote-testimonials {
     max-width: 221px;
@@ -605,15 +608,17 @@ max-width: 451px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
-
-
-
+    grid-area: ts-d;
 }
 
-.image-sinitta {
-    max-width: 221px;
 
+
+
+
+
+.image-sinitta {
+    /*max-width: 221px;*/
+    grid-area: ts-e;
     align-self: start;
     gap: 0 0 20px 0;
     align-items: start;
@@ -621,7 +626,7 @@ max-width: 451px;
 
 }
 
-
+******
 
 .title {
 
@@ -712,7 +717,7 @@ max-width: 451px;
     font-weight: 400;
     line-height: normal;
     list-style: none;
-    //*float: left;*/
+    /*float: left;*/
 
 }
 
@@ -881,17 +886,6 @@ footer {
 }
 
 
-    .title-biography {
-        
-        display: flex;
-        position: absolute;
-        align-items: baseline;
-        justify-content: start;
-        /*margin-left: 14%;*/
-        margin-top: -15%;
-        transform: rotate(-360deg);
-
-    }
 
     .strong-points-block {
         grid-auto-flow:row;
@@ -904,7 +898,9 @@ footer {
 
 @media screen and (max-width: 767px) {
     .body {
-        padding-bottom: 82px;
+        padding: 0;
+        margin: 0;
+       
     }
 
     .container {
@@ -919,10 +915,14 @@ footer {
         border: 1px solid #000;
         margin-bottom: 0.2%;
     }
+
     .logo {
         display: none;
     }
+
     .nav{
+        width: 100%;
+        height: 82px;
         display: flex;
         flex-wrap: nowrap;
         padding: 0;
@@ -931,17 +931,22 @@ footer {
         align-items: center;
         top: 10%;
     }
+
     .button {
-        width: 23.5px;
+      width: 30px;
+      height: 45px;
         text-overflow: clip;
         overflow: hidden;
         margin: 0;
-    }
-    button a {
-    font-weight: 400;
+        font-weight: 400;
         font-size: 40px;
+        font-family: 'Bitter-Regular';
+        font-style: normal;
+        letter-spacing: 10px;
+      
+    }
 
-}
+
 
 .hero-section {
     height: 764px;
@@ -959,163 +964,208 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
 .biography-block {
+
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
     justify-content: space-around;
     gap: 0;
     margin-bottom: 18%;
+    flex-direction: column-reverse;
+    position: relative;
+
+
+   
+}
+
+
+.img-katya-img::after {
+     
+        background-image: url(/img/jared-weiss-mob.jpg);
+        background-position: center;
+        background-repeat: no-repeat;   
+        max-width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin: 0;
+      
+}
+
+.bio {
+    max-width: 100%;
+}
+
+.bio-conetent {
+    transform: none;
+    translate: -50px;
 }
 .title-biography {
-    order: -2;
-    width: 5%;
-    transform: rotate(360deg);
-    translate: -50px;
-    font-size: 18px;
-    width: 92px;
-    margin-left: 80%;
-}
+  
+  position: absolute;
+   padding: 0;
+   top: 0;
+   right: 0;
+   width: auto;
+   transform: rotate(90deg);
 
-.content-block {
 
 }
+
 
 
 .item-biography {
-    order: -2;
-    display: flex;
+    order: -3;
+   
+}
+
+.list-bio {
     flex-direction: column;
-    width: 56%;
-    margin-bottom: 13%;
-    padding-left: 2%;
+}
+
+
+
+.item-bi::before {
+content: "-";
 
 }
 
-.mob-item {
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    width: 56%;
-    margin-bottom: 13%;
-    padding-left: 2%;
-    align-content: flex-start;
-    align-items: flex-start;
-}
+.item-bi:nth-of-type(n+2):before {
+    content: "-";
+    width: 10px;
+    height: 10px;
 
-.dash {
-    display: none;
-    background-color: white;
 }
 
 .blockquote {
-    order: 0;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 11%;
+    order: -1;
+    
 }
-.quote {
-    margin: 0;
-    height: 229px;
-    white-space: pre-line;
+.h-katya h2 {
+    
+        white-space: nowrap;
+        font-size: 64px;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 9%;
+        display: flex;
+        order: 2;
+      
+
 }
-.h-katya{
-    white-space: nowrap;
-    font-size: 64px;
-    font-weight: 300;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 9%;
-    display: flex;
+.h-katya h2::before{
+    content: "-";
+
 }
-.h-katya::before {
-    content: "- ";
-}
-.image-katya {
-    position: relative;
-    order: 3;
-}
-.img-katya img {
+
+.dash-bio {
     display: none;
 }
-.image-katya::after {
-    content: "";
-    display:block;
-    background-image: url(/img/katya\ mobile.png);
-    background-position: center;
-    background-repeat: no-repeat;   
-    width: 90vh;
-    height: 400px;
+
+.content-block {
+    max-width: 90%;
     
 }
 
+
+.title-designers {
+    display: none;
+    
+    }
+    
 .designers-block {
-    margin-bottom: 13.5%;
-}
-.slider {
-    margin-left: 2%;
-    gap: 4%;
-}
-.title-designers>h2 {
-    font-weight: 700;
-    font-size: 18px;
-    margin-left: 3.5%;
-    margin-bottom: 6%;
+    
+   display: grid;
+    gap: 16px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    height: 550px;
+    grid-template-areas:
+      "jess kam lou kam-tw"
+     
 }
 
-.photo-jess {
-    max-width: 310px;
-    height: 440px;
+
+.jess {
+    grid-area: jess;
+    grid-template-columns: 310px;
+    justify-content: center;
 }
-.jess-content>h3 {
-    text-align: start;
-    margin-left: 0;
+
+.jess::after { 
+    background-image: url(/img/spurwing.jpg);
+     
 }
-.jess-content>p {
-    text-align: start;
-    margin-left: 0; 
+.jess-content{
+justify-content: start;
+justify-self: start;
+
+
 }
-.jess-content b {
-    display: flex;
-    margin-left: 0;
-    justify-content: flex-start;
+
+.kameron {
+    grid-area: kam;
+ 
 }
+
+
+
+
+.louisse {
+    grid-area: lou;
+
+}
+
+
+
+
+.kameron-two {
+    grid-area: kam-tw;
+
+
+}
+
+
+
+
 
 .testimonials-block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-   
-   
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding:0px, 16px, 0px, 16px;
+    gap: 28px;
+    min-height: 900px;
+    grid-template-areas:
+    "ts-c"
+    "ts-d"
+    "ts-e"
+    "ts-a";
+    align-items: center;
+    justify-items:center;
+    margin-bottom:  100px;
 }
-.title-testimonials {
-        
-    display: flex;
-    position: absolute;
-    align-items: baseline;
-    justify-content: start;
-    transform: rotate(270deg);
-    align-self: flex-end;
-    padding-right: 4.5%;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 25%;
-    margin-top: 10%;
-    order: 0;
 
+
+.title-testimonials {
+    
+    width: 100%;
+    height: 100%;
+    transform: rotate(270deg);
+    text-align: end;
+    align-items: end;
+   
 }
 
 .blockquote-testimonials {
-    display: flex;
-    order: 2;
-    max-width: 337px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 5%;
+   max-width: 100%;
+
 }
-.blockquote-testimonials>p {
+.blockquote-testimonials {
     font-weight: 300;
     font-size: 30px;
     margin: 0;
@@ -1128,58 +1178,93 @@ footer {
 .image-sinitta::after {
    
     display: block;
-    background-image: url(/img/sinitta-leunen-mob.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 390px;
-    width: 414px;
+    width: 100%;
     margin: 0;
-    order: 3;
+    object-fit: cover;
+    
+ 
 }
 
 
-/*.web-more {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    min-width: 450px;
-   /*height: 96px;
+.link-ts {
+  
+    max-height: 96px;
     justify-content: space-between;
-    order: 4;
-    transform: rotate(90deg);
-}*/
-
-.more {
-   
- 
- 
-   
-   
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:16px;
+    max-width: 100%;
+    margin-left:10px ;
 }
+
 .website  {
-    translate: 0;
-    margin: 0;
-    transform: rotate(360deg);
-    order: 6;
+display: block;
+max-width: 48%;
+transform: rotate(360deg);
+
+
     
 }
 
+
 .brand  {
-    translate: 0;
-    margin: 0;
+    display: block;
+    max-width: 48%;
     transform: rotate(360deg);
-    align-self: start;
-    order: 7;
-  
 }
 
     
 .creativity {
-    translate: 0;
-    margin: 0;
+    display: block;
+    max-width: 48%;
     transform: rotate(360deg);
-    order: 8;
+   
 }
+***
+
+.title {
+
+    margin-top: 150px;
+
+}
+
+.strong-points-block {
+   
+ 
+
+}
+
+
+.computer {
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+}
+
+.armchair {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 100%;
+}
+
+.strengths {
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+
+}
+
+.title-strengths {
+
+}
+
+.cafe-photo {
+    grid-row: 2/3;
+    grid-column: 4/5;
+ 
+
+}
+
 
 
 

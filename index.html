@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,25 +32,41 @@
     </section>
 
 
-    <section class= "biography-block">
-       <div class = "image-katya">
-        <div class = 'img-katya img'><img src="./img/Katya Mills photo.jpg" alt ="Katya Mills photo" />
-    </div> </div>
-      <div class = "title-biography"><h3 id="biography">Biography</h3></div>
-   
-     <section class= "content-block">
+    <div class= "biography-block">
+  
+        <div class = 'img-katya-img'>
+            <picture>
+                <source srcset="img\jared-weiss-mob.jpg" media="(max-width: 767px)">
+                <source srcset="img\jared-weiss-mob.jpg" media="(max-width: 350px)">
+                <img src="./img/Katya Mills photo.jpg" alt="Katya Mills photo">
+            </picture>
+        
+    </div> 
+    
+      <h2 class = 'title-biography' id="biography">
+        <span class="bio-content">Biography</span></h2> 
+        <div class="bio">
+     <div class= "content-block">
        <div class = "h-katya"><h2>Katya Mills</h2></div>
        <div class = "item-biography"><p>Art Director</p>
-    <p>Scenography / Styling / Creative Photography / Design</p>
+        <ul class="list-bio">
+            <li class = "item-bi"> Scenography</li>
+            <li class = "item-bi"> Styling</li>
+            <li class = "item-bi"> Creative Photography</li>
+            <li class = "item-bi"> Design</li>
+          </ul>
+
 </div> 
+<div class = "dash-bio"></div>
 <div  class = "blockquote"> 
-        <div class = "dash"></div> 
-      <div class = "quote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</div>
+       
+      <div class = "quote">  “The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</div>
 
-    </div>
-    </section>
+    </div></div> 
+</div>
 
-    </section>
+
+</div>
 
 
     <div class = "designers-block">
@@ -57,7 +75,12 @@
 
 
         <article class="jess">
-            <div class="photo-jess"><img src="./img/Jess Wonder photo.jpg" alt="Jess Wonder photo" /></div>
+            <picture class = 'jess-photo'>
+                <source srcset="img\spurwing.jpg" media="(max-width: 767px)">
+                <source srcset="img\spurwing.jpg" media="(max-width: 350px)">
+                <img src="./img/Jess Wonder photo.jpg" alt="Jess Wonder photo" />
+            </picture>
+          
             <div class="jess-content"></br><b>JESS WONDER</b> </br>
                 <b> From/</b> Before more flower</br>
                 <b>Skills/</b>Design Strategy / Marketing
@@ -90,12 +113,13 @@
         <div class="title-testimonials" id="testimonials">Testimonials</div>
 
 
-
+<div class = 'link-ts'>
         <div class="website"><b>Website</b><br><a class="more" href="www.whitepapers.com">www.whitepapers.com</a></div>
         <div class="brand"><b>Brand Image</b><br><a class="more" href="www.whitepapers.com ">www.whitepapers.com</a>
         </div>
         <div class="creativity"><b>Creativity</b><br><a class="more" href="www.whitepapers.com">www.whitepapers.com</a>
         </div>
+    </div>
 
    
 
@@ -104,12 +128,17 @@
        <div class="img-img"> <div class="image-testimonials"><img src="./img/Testimonials photo.jpg" height="760px" alt="Testimonials photo" />
         </div></div>
 
-        <div class="rights-block">
+      
             <div class="blockquote-testimonials">
                 <p>I just really want to do good work and work with some great people, people who challange me.</p>
             </div>
-            <div class="image-sinitta"> <img src="./img/sinitta-leunen.png" alt="sinitta-leunen" /></div>
-        </div>
+            <picture class = 'image-sinitta'>
+                <source srcset="img\sinitta-leunen-mob.png" media="(max-width: 767px)">
+                <source srcset="img\sinitta-leunen-mob.png" media="(max-width: 350px)">
+                <img src="./img/sinitta-leunen.png" alt="sinitta-leunen" />
+            </picture>
+       
+     
 
     </div>
 
