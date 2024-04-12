@@ -400,9 +400,6 @@ margin-left: 20px;
 }
 
 .jess {
-    display: grid;
-    grid-template-columns: 572px;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: end;
 
 
@@ -420,9 +417,6 @@ margin-left: 20px;
 }
 
 .kameron {
-    display: grid;
-    grid-template-columns: 337px;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
 
@@ -441,9 +435,6 @@ margin-left: 20px;
 }
 
 .louisse {
-    display: grid;
-    grid-template-columns: 337px;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
 }
@@ -460,9 +451,6 @@ margin-left: 20px;
 }
 
 .kameron-two {
-    display: grid;
-    grid-template-columns: 337px;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
 
@@ -573,13 +561,11 @@ margin-left: 20px;
     grid-area: ts-c;
     max-width: 28px;
     max-height: 140px;
-
     display: flex;
     justify-self: start;
     writing-mode: vertical-lr;
     align-items: baseline;
     margin-left: 14%;
-
     color: #000;
     font-family: "Roboto-Bold";
     font-size: 24px;
@@ -588,13 +574,6 @@ margin-left: 20px;
     line-height: normal;
 
     transform: rotate(-180deg);
-    
-    
-
-
-
-
-
 }
 
 
@@ -617,7 +596,6 @@ margin-left: 20px;
 
 
 .image-sinitta {
-    /*max-width: 221px;*/
     grid-area: ts-e;
     align-self: start;
     gap: 0 0 20px 0;
@@ -638,10 +616,6 @@ margin-left: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    justify-self: start;
-    margin-left: 15%;
-    margin-bottom: 0;
-    margin-top: 50px;
 
 }
 
@@ -1130,10 +1104,6 @@ justify-self: start;
 
 }
 
-
-
-
-
 .testimonials-block {
     grid-template-columns:  1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -1220,13 +1190,8 @@ transform: rotate(360deg);
     transform: rotate(360deg);
    
 }
-***
 
-.title {
 
-    margin-top: 150px;
-
-}
 
 .strong-points-block {
    
@@ -1235,16 +1200,6 @@ transform: rotate(360deg);
 }
 
 
-.computer {
-    grid-row: 2/3;
-    grid-column: 1/2;
-
-}
-
-.armchair {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    width: 100%;
 }
 
 .strengths {
