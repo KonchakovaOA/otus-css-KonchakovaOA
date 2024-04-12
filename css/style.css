@@ -240,6 +240,7 @@ ul {
   .img-katya-img{
     max-width: 571px;
     justify-content: end;
+    position: relative;
 
 }
 
@@ -1237,8 +1238,9 @@ transform: rotate(360deg);
 *****
 
 footer {
-
-
+   
+    flex-wrap: wrap;
+    justify-content: left;
 
 
 }
