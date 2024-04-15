@@ -2,8 +2,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,14 +18,20 @@
     <header class="container">
         <div class="logo">Mod</div>
         <nav class="nav">
-            <a class="button" href="#biography">Biography</a>
-            <a class="button" href="#designers">Designers</a>
-            <a class="button" href="#testimonials">Testimonials</a>
-            <a class="button" href="#strong-points">Strong points</a>
+            <a class="nav-link" href="#biography">Biography</a>
+            <a class="nav-link" href="#designers">Designers</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#strong-points">Strong points</a>
+            <div class="menu-header-message">
+                <img src="img/icon.png" alt="Message" onclick="{window.modal_window.showModal();
+                    const body = document.querySelector('body.page');
+                    body.classList.toggle('page-scroll');
+                }">
+            </div>
         </nav>
     </header>
 
-
+<main>
     <section class="hero-section">
         <div class="section-h">
             <h1 class="hero">Mod Studio</h1>
@@ -34,14 +42,13 @@
 
     <div class= "biography-block">
   
-        <div class = 'img-katya-img'>
-            <picture>
+            <picture class = 'img-katya-img'>
                 <source srcset="img\jared-weiss-mob.jpg" media="(max-width: 767px)">
                 <source srcset="img\jared-weiss-mob.jpg" media="(max-width: 350px)">
                 <img src="./img/Katya Mills photo.jpg" alt="Katya Mills photo">
             </picture>
         
-    </div> 
+  
     
       <h2 class = 'title-biography' id="biography">
         <span class="bio-content">Biography</span></h2> 
@@ -68,12 +75,8 @@
 
 </div>
 
-
+<h3 id="designers" , class='title-designers'>Designers</h3>
     <div class = "designers-block">
-
-        <h3 id="designers" , class='title-designers'>Designers</h3>
-
-
         <article class="jess">
             <picture class = 'jess-photo'>
                 <source srcset="img\spurwing.jpg" media="(max-width: 767px)">
@@ -145,11 +148,9 @@
 
 
 
-
-    <section>
-        <h3 id="strong-points" , class="title">Strong points</h3>
-        <div class="strong-points-block">
-
+    <h3 id='strong-points', class ='st-title'>Strong points</h3>
+    <section class="strong-points-block">
+       
             <div class="computer"><img src="./img/computer.jpg" alt="computer" /></div>
             <div class="armchair"><img src="./img/armchair.jpg" alt="armchair" /></div>
             <div class="strengths">
@@ -171,8 +172,9 @@
                 </div>
             </div>
             <div class="cafe-photo"><img src="./img/Testimonials photo.jpg" alt="Testimonials photo" /></div>
-        </div>
+        
     </section>
+</main>
 
     <footer>
         <div class="address">
@@ -185,6 +187,40 @@
         <div class="content-footer">A product of<strong>MOD</strong></div>
         <div class="copyright"> © 2023 Mod Media. All rights reserved</div>
     </footer>
+
+    <dialog id="modal_window" class="dialog-modal">
+        <form class="modal-form">
+            <div>Get in touch</div>
+            <label class="modal-form-element">
+                Do you have any questions?
+            </label>
+    
+            <label class="modal-form-element">
+                Name
+                <input type="text" name="name" placeholder="3+ Characters" required
+                minlength="3" autofocus>
+            </label>
+    
+            <label class="modal-form-element">
+                Email
+                <input type="email" name="email" placeholder="name@email.com" required>
+            </label>
+    
+            <label class="modal-form-element">
+                Comment
+                <textarea rows="5" cols="33" name="comment" placeholder="Some text...">
+                </textarea>
+            </label>
+    
+            <div class="modal-form-buttons">
+                <button type="button" onclick="{window['modal_window'].close();
+                            const body = document.querySelector('body.page');
+                            body.classList.toggle('page-scroll');
+                }">Close</button>
+                <button type="submit" >Send</button>
+            </div>
+        </form>
+    </dialog>
 </body>
 
 </html>

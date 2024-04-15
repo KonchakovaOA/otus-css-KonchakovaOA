@@ -17,10 +17,11 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+   
 
 }
 
-h2, h3, ul, p {
+h2, ul, p {
     margin: 0;
     padding: 0;
   }
@@ -120,21 +121,28 @@ h2, h3, ul, p {
 
 
 
+header{
+display: flex;
+max-width: 100%;
+overflow: hidden;
 
+
+}
 .container {
     display: flex;
-    width: 100%;
+    width: 98%;
     height: 135px;
     outline: 1px solid #FFF;
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .logo {
     display: flex;
-    width: 2fr;
+    max-width: 2fr;
     height: 103px;
     margin: 0;
     vertical-align: center;
@@ -148,6 +156,7 @@ h2, h3, ul, p {
 
 .nav {
     display: flex;
+    
     height: 28px;
     color: #000;
     text-align: right;
@@ -167,7 +176,7 @@ h2, h3, ul, p {
 
 }
 
-.button {
+.nav-link{
     height: 28px;
     color: #000;
     text-decoration: none;
@@ -237,6 +246,7 @@ ul {
   .img-katya-img{
     max-width: 571px;
     justify-content: end;
+    position: relative;
 
 }
 
@@ -245,7 +255,7 @@ ul {
     max-width: 90%;
     margin-top: 10%;
     justify-content: center;
-    margin-right: 5%;
+   
    
 }
 
@@ -376,18 +386,17 @@ margin-left: 20px;
     margin-bottom: 200px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
+    justify-content: start;
     color: #000;
     gap: 20px;
     overflow-y: hidden;
-
-
+    align-items: end;
 }
 
 
 
 .title-designers {
-    grid-column: 1/5;
+   
     color: #000;
     font-family: "Roboto";
     font-size: 24px;
@@ -400,9 +409,6 @@ margin-left: 20px;
 }
 
 .jess {
-    display: grid;
-    grid-template-columns: 572px;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: end;
 
 
@@ -420,9 +426,6 @@ margin-left: 20px;
 }
 
 .kameron {
-    display: grid;
-    grid-template-columns: 337px;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
 
@@ -441,9 +444,6 @@ margin-left: 20px;
 }
 
 .louisse {
-    display: grid;
-    grid-template-columns: 337px;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
 }
@@ -460,9 +460,6 @@ margin-left: 20px;
 }
 
 .kameron-two {
-    display: grid;
-    grid-template-columns: 337px;
-    grid-template-rows: repeat(3, 1fr);
     justify-content: end;
     align-items: end;
 
@@ -480,8 +477,11 @@ margin-left: 20px;
 
 
 .testimonials-block {
+  
     display: grid;
-    max-width: 100%;
+    max-width: 70%;
+    margin-left:10% ;
+    margin-right: 10%;
     height: 760px;
     margin-top: 50px;
     grid-template-columns: 15% 40% 10% 30%;
@@ -491,7 +491,7 @@ margin-left: 20px;
     grid-template-areas:
     
     "ts-a ts-b ts-c ts-d"
-    "ts-a ts-b ts-c ts-e"
+    "ts-a ts-b ts-c ts-e";
      
      
       
@@ -560,10 +560,10 @@ margin-left: 20px;
 
 }
 .img-img {
+    display: block;
     grid-area: ts-b;
     object-fit: cover;
-    flex-basis: 451px;
-   
+   max-width: 100%;
   
 
 }
@@ -573,13 +573,11 @@ margin-left: 20px;
     grid-area: ts-c;
     max-width: 28px;
     max-height: 140px;
-
     display: flex;
     justify-self: start;
     writing-mode: vertical-lr;
     align-items: baseline;
     margin-left: 14%;
-
     color: #000;
     font-family: "Roboto-Bold";
     font-size: 24px;
@@ -588,13 +586,6 @@ margin-left: 20px;
     line-height: normal;
 
     transform: rotate(-180deg);
-    
-    
-
-
-
-
-
 }
 
 
@@ -617,7 +608,6 @@ margin-left: 20px;
 
 
 .image-sinitta {
-    /*max-width: 221px;*/
     grid-area: ts-e;
     align-self: start;
     gap: 0 0 20px 0;
@@ -628,13 +618,11 @@ margin-left: 20px;
 
 ******
 
-.title {
-
-
+.st-title {
     align-self: baseline;
     color: #000;
     font-family: "Roboto";
-    font-size: 24px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -642,6 +630,7 @@ margin-left: 20px;
     margin-left: 15%;
     margin-bottom: 0;
     margin-top: 50px;
+
 
 }
 
@@ -659,27 +648,25 @@ margin-left: 20px;
     overflow-y: hidden;
     justify-items: center;
     margin-top: 50px;
-
+grid-template-areas:
+"st-a st-b st-c sp-d";
 
 }
 
 
 .computer {
-    grid-row: 2/3;
-    grid-column: 1/2;
+grid-area: st-a;
     width: 100%;
     margin-left: 5%;
 }
 
 .armchair {
-    grid-row: 2/3;
-    grid-column: 2/3;
+    grid-area: st-b;
     width: 100%;
 }
 
 .strengths {
-    grid-row: 2/3;
-    grid-column: 3/4;
+    grid-area: st-c;
     width: 100%;
     justify-content: center;
 
@@ -694,17 +681,18 @@ margin-left: 20px;
     line-height: 100%;
     justify-self: center;
     float: left;
+    padding-bottom: 3%;
 }
 
 .cafe-photo {
-    grid-row: 2/3;
-    grid-column: 4/5;
+    grid-area: st-d;
     max-height: 555px;
 
 }
 
 .list-strong {
     text-align: left;
+    margin-left:25% ;
 
 }
 
@@ -717,7 +705,7 @@ margin-left: 20px;
     font-weight: 400;
     line-height: normal;
     list-style: none;
-    /*float: left;*/
+   
 
 }
 
@@ -788,7 +776,7 @@ margin-left: 20px;
         line-height: normal;
         list-style: none;
 
-        /*float: left;*/
+     
 
 
     }
@@ -864,6 +852,42 @@ footer {
     align-self: center;
 }
 
+.menu-header-message {
+    max-width: 35px;
+  }
+.page-scroll {
+    overflow: hidden;
+  }
+
+.dialog-modal {
+    max-width: 480px;
+    gap: 24px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .modal-form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  }
+  
+  .modal-form-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+
+
 @media screen and (min-width: 768px) and (max-width: 1020px) {
 
     .title-testimonials {
@@ -900,20 +924,35 @@ footer {
     .body {
         padding: 0;
         margin: 0;
+        max-width: 100%;
        
     }
+
+    main {
+        order: 1;
+        max-width: 100%;
+    }
+    header {
+        order: 2;
+        max-width: 100%;
+    }
+    footer {
+        order: 3;
+        max-width: 100%;
+    }
+
 
     .container {
         display: flex;
         align-items: center;
         height: 82px;
-        width: 99%;
-        position: fixed;
+        width: 100%;
+       position: fixed;
         background-color: #fff;
         bottom: 0;
-        z-index: 1;
+        z-index: 3;
         border: 1px solid #000;
-        margin-bottom: 0.2%;
+        margin-bottom: 120px;
     }
 
     .logo {
@@ -932,7 +971,7 @@ footer {
         top: 10%;
     }
 
-    .button {
+    .nav-link {
       width: 30px;
       height: 45px;
         text-overflow: clip;
@@ -983,12 +1022,9 @@ footer {
 
 
 .img-katya-img::after {
-     
-        background-image: url(/img/jared-weiss-mob.jpg);
-        background-position: center;
-        background-repeat: no-repeat;   
-        max-width: 100%;
-        height: 400px;
+ 
+        display: block;
+        min-width: 350px;
         object-fit: cover;
         margin: 0;
       
@@ -1072,7 +1108,8 @@ content: "-";
 
 
 .title-designers {
-    display: none;
+   padding-left: 0;
+   margin-left: 5%;
     
     }
     
@@ -1080,7 +1117,8 @@ content: "-";
     
    display: grid;
     gap: 16px;
-    margin-left: 20px;
+    max-width: 97%;
+    margin-left: 2%;
     margin-bottom: 0;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
@@ -1130,14 +1168,12 @@ justify-self: start;
 
 }
 
-
-
-
-
 .testimonials-block {
+  
+    max-width: 97%;
     grid-template-columns:  1fr;
     grid-template-rows: repeat(4, 1fr);
-    padding:0px, 16px, 0px, 16px;
+    /*padding:0px, 16px, 0px, 16px;*/
     gap: 28px;
     min-height: 900px;
     grid-template-areas:
@@ -1148,17 +1184,19 @@ justify-self: start;
     align-items: center;
     justify-items:center;
     margin-bottom:  100px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
 .title-testimonials {
     
-    width: 100%;
+    width: 98%;
     height: 100%;
     transform: rotate(270deg);
     text-align: end;
     align-items: end;
-   
+    margin-left: 80%;
 }
 
 .blockquote-testimonials {
@@ -1178,7 +1216,7 @@ justify-self: start;
 .image-sinitta::after {
    
     display: block;
-    width: 100%;
+    width: 98%;
     margin: 0;
     object-fit: cover;
     
@@ -1193,7 +1231,7 @@ justify-self: start;
     flex-direction: row;
     flex-wrap: wrap;
     gap:16px;
-    max-width: 100%;
+    max-width: 97%;
     margin-left:10px ;
 }
 
@@ -1220,50 +1258,35 @@ transform: rotate(360deg);
     transform: rotate(360deg);
    
 }
-***
 
-.title {
 
-    margin-top: 150px;
-
-}
 
 .strong-points-block {
+  
+   margin: 0;
+   justify-content: flex-start;
    
- 
 
-}
-
-
-.computer {
-    grid-row: 2/3;
-    grid-column: 1/2;
-
-}
-
-.armchair {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    width: 100%;
 }
 
 .strengths {
-    grid-row: 2/3;
-    grid-column: 1/2;
+ order: -1;
+
+
+}
+.list-strong {
+    margin-left: 0;
+}
+*****
+
+footer {
+   
+    flex-wrap: wrap;
+    justify-content: left;
 
 
 }
 
-.title-strengths {
-
-}
-
-.cafe-photo {
-    grid-row: 2/3;
-    grid-column: 4/5;
- 
-
-}
 
 
 
