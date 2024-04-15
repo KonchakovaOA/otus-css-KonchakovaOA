@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+   
 
 }
 
@@ -122,22 +123,26 @@ h2, ul, p {
 
 header{
 display: flex;
+max-width: 100%;
+overflow: hidden;
+
 
 }
 .container {
     display: flex;
-    width: 100%;
+    width: 98%;
     height: 135px;
     outline: 1px solid #FFF;
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .logo {
     display: flex;
-    width: 2fr;
+    max-width: 2fr;
     height: 103px;
     margin: 0;
     vertical-align: center;
@@ -151,6 +156,7 @@ display: flex;
 
 .nav {
     display: flex;
+    
     height: 28px;
     color: #000;
     text-align: right;
@@ -170,7 +176,7 @@ display: flex;
 
 }
 
-.button {
+.nav-link{
     height: 28px;
     color: #000;
     text-decoration: none;
@@ -846,6 +852,42 @@ footer {
     align-self: center;
 }
 
+.menu-header-message {
+    max-width: 35px;
+  }
+.page-scroll {
+    overflow: hidden;
+  }
+
+.dialog-modal {
+    max-width: 480px;
+    gap: 24px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .modal-form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  }
+  
+  .modal-form-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+
+
 @media screen and (min-width: 768px) and (max-width: 1020px) {
 
     .title-testimonials {
@@ -929,7 +971,7 @@ footer {
         top: 10%;
     }
 
-    .button {
+    .nav-link {
       width: 30px;
       height: 45px;
         text-overflow: clip;
