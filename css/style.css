@@ -17,7 +17,8 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-   
+
+
 
 }
 
@@ -158,7 +159,6 @@ overflow: hidden;
 
 .nav {
     display: flex;
-    
     height: 28px;
     color: #000;
     text-align: right;
@@ -170,6 +170,7 @@ overflow: hidden;
     vertical-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
 
 
@@ -856,38 +857,49 @@ footer {
     align-self: center;
 }
 
+
 .menu-header-message {
-    max-width: 35px;
-  }
-.page-scroll {
-    overflow: hidden;
+    max-width: 100%;
+    
   }
 
+.page-scroll{
+    overflow: hidden;
+}
+
 .dialog-modal {
-    max-width: 480px;
+    width: 480px;
+    height: 590px;
     gap: 24px;
     padding: 20px;
     border: none;
     border-radius: 10px;
-  }
+    background-color: #FFFFFF;
+}
+    
+   
   
+
   .modal-form-element {
     display: flex;
     flex-direction: column;
     gap: 6px;
     width: 100%;
+   
   }
   
   .modal-form-buttons {
     display: flex;
     gap: 20px;
     justify-content: center;
+    
   }
   
   .modal-form {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    
   }
   
 
