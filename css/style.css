@@ -26,6 +26,7 @@ h2, ul, p {
     padding: 0;
   }
 
+
 /*@font-face {
     font-family: "Bitter", serif;
     src: url(/fonts/Bitter-Light.ttf) format(.ttf);
@@ -1045,6 +1046,7 @@ h1.hero{
     margin: 0; 
 }
 
+
 .img-katya-img::after {
  
     width: 100%; 
@@ -1274,14 +1276,7 @@ transform: rotate(360deg);
     
 }
 
-
-.brand  {
-    display: block;
-    max-width: 40%;
-    transform: rotate(360deg);
-}
-
-    
+   
 .creativity {
     display: block;
     max-width: 40%;
@@ -1290,6 +1285,11 @@ transform: rotate(360deg);
 }
 
 
+.brand  {
+    display: block;
+    max-width: 40%;
+    transform: rotate(360deg);
+}
 
 .strong-points-block {
   
@@ -1307,7 +1307,7 @@ transform: rotate(360deg);
 .list-strong {
     margin-left: 0;
 }
-*****
+
 
 footer {
    max-width: 100%;
@@ -1318,10 +1318,4 @@ footer {
 }
 
 
-}
-
-@media screen and (max-width: 350px){
-.block-img {
-    display: none;
-}
 }
