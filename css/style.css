@@ -1039,7 +1039,7 @@ footer {
   
   .modal-button-black:hover,
   .modal-button-white:hover {
-    outline: 2px solid #db709e;
+    outline: 2px solid #3f394a;
     cursor: pointer;
     transform: scale(1.1);
   }
