@@ -919,7 +919,7 @@ footer {
   
 
   .modal-name-user {
- 
+    background-image: url(/img/edit-name.svg);
     background-size: 6%;
     background-position: right;
     background-repeat: no-repeat;
@@ -940,13 +940,20 @@ footer {
   }
   
   .modal-email-at {
-    
+    background-image: url(/img/ph_at.svg);
     background-size: 7%;
     background-position: top right;
     background-repeat: no-repeat;
     background-origin: content-box;
   }
   
+  .modal-form-text{
+    background-image: url(/img/vector.svg);
+    background-size: 7%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
 
   .modal-name-input:hover,
   .modal-form-textarea:hover {
@@ -1032,7 +1039,7 @@ footer {
   
   .modal-button-black:hover,
   .modal-button-white:hover {
-    outline: 2px solid #9370DB;
+    outline: 2px solid #db709e;
     cursor: pointer;
     transform: scale(1.1);
   }
