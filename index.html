@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@500;700;900&display=swap"
         rel="stylesheet">
         <script src="./js"></script>
+        <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v6.4.4/css/all.css">
         <script src="https://kit.fontawesome.com/4494c9a66b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -46,7 +47,6 @@
   <div class="block-img">
             <picture class = 'img-katya-img'>
                 <source srcset="img/jared-weiss-mob.jpg" media="(max-width: 767px)">
-                <!--source srcset="img/jared-weiss-mob.jpg" media="(max-width: 350px)"-->
                 <img src="./img/katya-mills-photo.jpg" alt="katya-mills-photo">
             </picture></div>
         
@@ -190,36 +190,40 @@
         <div class="copyright"> © 2023 Mod Media. All rights reserved</div>
     </footer>
 
+
     <dialog id="modal_window" class="dialog-modal">
         <form class="modal-form">
-            <div>Get in touch</div>
+            <h2 id="modal-form-name" class="modal-form-title"> Get in Touch </h2>
             <label class="modal-form-element">
-                Do you have any questions?
+                <p class="modal-form-subtitle">Do you have any questions? </p>
             </label>
     
             <label class="modal-form-element">
                 Name
-                <input type="text" name="name" placeholder="3+ Characters" required
+              
+                <input class = "modal-name-input modal-name-user" type="text" name="name" placeholder="3+ Characters" required
                 minlength="3" autofocus>
+
             </label>
     
             <label class="modal-form-element">
                 Email
-                <input type="email" name="email" placeholder="name@email.com" required>
+                <input class="modal-email-input modal-email-at" type="email" name="email" placeholder="name@email.com" required>
             </label>
     
             <label class="modal-form-element">
                 Comment
-                <textarea rows="5" cols="33" name="comment" placeholder="Some text...">
+                <textarea class="modal-form-textarea modal-form-text" rows="5" cols="33" name="comment" placeholder="Some text...">
                 </textarea>
             </label>
     
             <div class="modal-form-buttons">
-                <button type="button" onclick="{window['modal_window'].close();
+                <button type="button" onclick="{window['modal_window'].close() ;
                             const body = document.querySelector('body.page');
                             body.classList.toggle('page-scroll');
-                }">Close</button>
-                <button type="submit" >Send</button>
+                }" class="modal-button-white modal-close-button">Close</button>
+                <button type="submit" class="modal-button-black"><i
+                    class="fa-solid fa-plus modal-button-plus"></i>Send</button>
             </div>
         </form>
     </dialog>
