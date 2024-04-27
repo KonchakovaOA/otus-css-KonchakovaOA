@@ -857,6 +857,7 @@ footer {
     align-self: center;
 }
 
+/*модельное окно*/
 
 .menu-header-message {
     max-width: 100%;
@@ -867,42 +868,181 @@ footer {
     overflow: hidden;
 }
 
+
+
 .dialog-modal {
-    width: 480px;
-    height: 590px;
-    gap: 24px;
-    padding: 20px;
     border: none;
     border-radius: 10px;
-    background-color: #FFFFFF;
-}
-    
-   
-  
-
-  .modal-form-element {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 100%;
-   
+    margin: auto;
+    top: 2%;
   }
   
-  .modal-form-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    
+  .modal-form:after {
+    content: "";
+    position: fixed;
+    width: 480px;
+    height: 589px;
+    transform: rotate(2deg);
+    border: 2px solid #fff;
+    translate: -4% 0.5%;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  .modal::backdrop {
+    background-color: rgba(88, 85, 85, 0.5);
   }
   
   .modal-form {
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 24px;
-    
+    width: 480px;
+    height: 588px;
+    background-color: #FFFFFF;
+  }
+  
+  .modal-name-input {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #686666;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    padding: 2%;
   }
   
 
+  .modal-name-user {
+    background-image: url(/img/edit-name.svg);
+    background-size: 6%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  
+  .modal-email-input {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #686666;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    padding: 2%;
+  }
+  
+  .modal-email-at {
+    background-image: url(/img/ph_at.svg);
+    background-size: 7%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  
+  .modal-form-text{
+    background-image: url(/img/vector.svg);
+    background-size: 7%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  .modal-name-input:hover,
+  .modal-form-textarea:hover {
+    background-color: #F5F5F5;
+  }
+  
+  .modal-name-input:focus,
+  .modal-form-textarea:focus {
+    outline: 2px solid #686666;
+  }
+  
+  .modal-form-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    width: 440px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+  }
+  
+  .modal-form-textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #686666;
+    border-radius: 8px;
+    height: 135px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    padding: 2%;
+  }
+  
+  .modal-form-title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: left;
+  }
+  
+  .modal-form-subtitle {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+  }
+  
+  .modal-form-button {
+    text-align: center;
+  }
+  
+  .modal-button-white {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31.68px;
+    border-radius: 8px;
+    height: 55px;
+    width: 180px;
+    background-color: #FFFFFF;
+    margin-right: 3%;
+  }
+  
+  .modal-button-black {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31.68px;
+    border-radius: 8px;
+    height: 55px;
+    width: 180px;
+    color: #FFFFFF;
+    background-color: #000000;
+  }
+  
+  .modal-button-black:hover,
+  .modal-button-white:hover {
+    outline: 2px solid #3f394a;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
 
